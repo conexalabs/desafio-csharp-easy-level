@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "5d129989-49fe-4c4a-a7a2-bc2e0f312613",
+		"name": "ApiTemperatura",
+		"description": "Requisições de temperatura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Por nome",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32768/api/Weather/por-nome?nomeCidade=sao paulo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32768",
+					"path": [
+						"api",
+						"Weather",
+						"por-nome"
+					],
+					"query": [
+						{
+							"key": "nomeCidade",
+							"value": "sao paulo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Por localizacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32768/api/Weather/por-localizacao?lat=-16.28&lon=-49.45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32768",
+					"path": [
+						"api",
+						"Weather",
+						"por-localizacao"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-16.28"
+						},
+						{
+							"key": "lon",
+							"value": "-49.45"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Historico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Historico-localizacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32769/api/Weather/historico?lat=-16.28&lon=-49.45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32769",
+					"path": [
+						"api",
+						"Weather",
+						"historico"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-16.28"
+						},
+						{
+							"key": "lon",
+							"value": "-49.45"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
