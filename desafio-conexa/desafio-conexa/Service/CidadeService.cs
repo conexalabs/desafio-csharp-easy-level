@@ -38,7 +38,7 @@ namespace desafio_conexa.Service
             }
             var api = new WeatherMap();
             var weather = api.getApiLatLong(lat,lon);
-            if (weather != null)
+            if (weather != null && !string.IsNullOrEmpty(weather.Name))
             {
                 retorno.Mensagem = GravarDados(weather.Name, weather.main.Temp);
                 retorno.temperatura = weather.main.Temp;
@@ -109,6 +109,11 @@ namespace desafio_conexa.Service
                     retorno.Historico = MontaListaHistorico(weather.Name);
                     retorno.Mensagem = retorno.Historico?.Count > 0 ? "Sucesso" : "Não há histórico para esta cidade";
                     retorno.Sucesso = true;
+                    return retorno;
+                }
+                else
+                {
+                    retorno.Mensagem = "Não foi possível retornar dados da api de temperaturas.";
                     return retorno;
                 }
             }
