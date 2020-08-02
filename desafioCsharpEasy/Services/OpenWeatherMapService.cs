@@ -24,20 +24,14 @@ namespace desafioCsharpEasy.Services
             );
         }
 
-        public async Task<WeatherResponse> GetWeatherByCityName(string city)
-        {
-            return await GetWeather($"q={city}");
-        }
+        public async Task<WeatherResponse> GetWeatherByCityName(string city) =>
+            await GetWeather($"q={city}");
 
-        public async Task<WeatherResponse> GetWeatherByCityId(long id)
-        {
-            return await GetWeather($"id={id}");
-        }
+        public async Task<WeatherResponse> GetWeatherByCityId(long id) =>
+            await GetWeather($"id={id}");
 
-        public async Task<WeatherResponse> GetWeatherByCoordinates(double latitude, double longitude)
-        {
-            return await GetWeather($"lat={latitude}&lon={longitude}");
-        }
+        public async Task<WeatherResponse> GetWeatherByCoordinates(double latitude, double longitude) =>
+            await GetWeather($"lat={latitude}&lon={longitude}");
 
         private async Task<WeatherResponse> GetWeather(string arg)
         {
