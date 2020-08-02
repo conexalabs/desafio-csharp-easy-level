@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "f429a853-fb30-4926-8744-a7c9fb51ed76",
+		"name": "Open Weather Map API",
+		"description": "Collection de requisições da API Open Weather Map.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=goiania,br&lang=pt_br&units=metric&appid=b7306bb95967d89e9ccbd95d9759f87e",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "goiania,br"
+						},
+						{
+							"key": "lang",
+							"value": "pt_br"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "b7306bb95967d89e9ccbd95d9759f87e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ByCoord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=-16.68&lon=-49.25&lang=pt_br&units=metric&appid=b7306bb95967d89e9ccbd95d9759f87e",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-16.68"
+						},
+						{
+							"key": "lon",
+							"value": "-49.25"
+						},
+						{
+							"key": "lang",
+							"value": "pt_br"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "b7306bb95967d89e9ccbd95d9759f87e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c41e2455-d1cd-4417-9b43-6e04703129e5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "feae63e9-0c0c-4da0-9b6f-18246b5f6a24",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

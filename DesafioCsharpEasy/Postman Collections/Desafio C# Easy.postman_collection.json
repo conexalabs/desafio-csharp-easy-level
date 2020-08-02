@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "501db656-e0a4-4886-a3eb-88a51628b185",
+		"name": "Desafio C# Easy",
+		"description": "Collection de requisições para end-points da API Desafio C# Easy.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Temperature/ByCity?city=goiania",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Temperature",
+						"ByCity"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "goiania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ByCoord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Temperature/ByCoord?latitude=-16.68&longitude=-49.25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Temperature",
+						"ByCoord"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-16.68"
+						},
+						{
+							"key": "longitude",
+							"value": "-49.25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CurrentMonthHistory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Temperature/CurrentMonthHistory?city=goiania&latitude=-16.68&longitude=-49.25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Temperature",
+						"CurrentMonthHistory"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "goiania"
+						},
+						{
+							"key": "latitude",
+							"value": "-16.68"
+						},
+						{
+							"key": "longitude",
+							"value": "-49.25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LastMonthHistorical",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Temperature/LastMonthHistory?city=goiania&latitude=-16.68&longitude=-49.25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Temperature",
+						"LastMonthHistory"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "goiania"
+						},
+						{
+							"key": "latitude",
+							"value": "-16.68"
+						},
+						{
+							"key": "longitude",
+							"value": "-49.25"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "24128519-a28f-45a8-93db-bce564a0409e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6433bad9-15c8-46f7-a606-aabd6099385b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
