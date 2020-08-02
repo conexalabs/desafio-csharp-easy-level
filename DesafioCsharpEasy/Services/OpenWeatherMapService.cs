@@ -3,10 +3,10 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using desafioCsharpEasy.Models;
+using DesafioCsharpEasy.Models;
 using Newtonsoft.Json;
 
-namespace desafioCsharpEasy.Services
+namespace DesafioCsharpEasy.Services
 {
     public class OpenWeatherMapService
     {
@@ -15,7 +15,7 @@ namespace desafioCsharpEasy.Services
 
         public OpenWeatherMapService()
         {
-            _apiKey = "pleaseyouseyourownkeymybuddy";
+            _apiKey = "2bc4a4e88c6885b48767c0be6edfd467";
             _client = new HttpClient();
             _client.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/");
             _client.DefaultRequestHeaders.Accept.Clear();

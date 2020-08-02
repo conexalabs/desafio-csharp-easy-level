@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace desafioCsharpEasy.Models
+namespace DesafioCsharpEasy.Models
 {
     public class TemperatureContext : DbContext
     {

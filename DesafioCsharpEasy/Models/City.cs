@@ -1,4 +1,4 @@
-namespace desafioCsharpEasy.Models
+namespace DesafioCsharpEasy.Models
 {
     public class City
     {

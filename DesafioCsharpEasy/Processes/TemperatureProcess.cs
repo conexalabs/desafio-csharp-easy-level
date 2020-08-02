@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using desafioCsharpEasy.Models;
-using desafioCsharpEasy.Services;
+using DesafioCsharpEasy.Models;
+using DesafioCsharpEasy.Services;
 
-namespace desafioCsharpEasy.Processes
+namespace DesafioCsharpEasy.Processes
 {
     class TemperatureProcess
     {

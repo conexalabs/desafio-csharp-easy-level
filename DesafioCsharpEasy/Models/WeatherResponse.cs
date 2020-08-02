@@ -1,6 +1,4 @@
-using System;
-
-namespace desafioCsharpEasy.Models
+namespace DesafioCsharpEasy.Models
 {
     public class WeatherResponse
     {

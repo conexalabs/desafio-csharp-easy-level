@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using desafioCsharpEasy.Models;
-using desafioCsharpEasy.Processes;
+using DesafioCsharpEasy.Models;
+using DesafioCsharpEasy.Processes;
 
-namespace desafioCsharpEasy.Controllers
+namespace DesafioCsharpEasy.Controllers
 {
     [ApiController]
     [Route("api/temperature")]
@@ -79,9 +79,9 @@ namespace desafioCsharpEasy.Controllers
         ///
         /// Samples:
         ///
-        ///     GET /api/temperature/current?city=Goiania
+        ///     GET /api/temperature/history?city=Goiania
         ///
-        ///     GET /api/temperature/current?latitude=-16.68&amp;longitude=-49.25
+        ///     GET /api/temperature/history?latitude=-16.68&amp;longitude=-49.25
         /// </remarks>
         /// <returns>List of weather objects with temperatures registered in the last month</returns>
         /// <response code="200">Returns the weather list</response>

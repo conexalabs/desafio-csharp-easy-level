@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace desafioCsharpEasy.Models
+namespace DesafioCsharpEasy.Models
 {
 	public class Weather
     {
