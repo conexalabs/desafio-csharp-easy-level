@@ -15,7 +15,7 @@ namespace DesafioCsharpEasy.Services
 
         public OpenWeatherMapService()
         {
-            _apiKey = "2bc4a4e88c6885b48767c0be6edfd467";
+            _apiKey = "useyourownkeymybuddy";
             _client = new HttpClient();
             _client.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/");
             _client.DefaultRequestHeaders.Accept.Clear();

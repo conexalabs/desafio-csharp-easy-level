@@ -7,5 +7,6 @@ RUN dotnet publish -c release -o /app
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:5000
 COPY --from=build /app .
 ENTRYPOINT ["dotnet", "DesafioCsharpEasy.dll"]

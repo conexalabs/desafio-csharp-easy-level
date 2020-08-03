@@ -29,20 +29,30 @@ namespace DesafioCsharpEasy.Processes
         {
             var actualWeather = await UpdateWeather(await _service.GetWeatherByCityName(city));
             if (actualWeather == null) return null;
-            return _context.Weathers
+            var weathers = _context.Weathers
                 .Where(weather => weather.CityId == actualWeather.CityId
                     && weather.Date.Month == DateTime.Now.Month)
-                .OrderBy(weather => weather.Date);
+                .OrderBy(weather => weather.Date)
+                .ToList();
+            
+            weathers.ForEach(weather => weather.City = actualWeather.City);
+
+            return weathers;
         }
 
         public async Task<IEnumerable<Weather>> GetHistoric(double latitude, double longitude)
         {
             var actualWeather = await UpdateWeather(await _service.GetWeatherByCoordinates(latitude, longitude));
             if (actualWeather == null) return null;
-            return _context.Weathers
+            var weathers = _context.Weathers
                 .Where(weather => weather.CityId == actualWeather.CityId
                     && weather.Date.Month == DateTime.Now.Month)
-                .OrderBy(weather => weather.Date);
+                .OrderBy(weather => weather.Date)
+                .ToList();
+
+            weathers.ForEach(weather => weather.City = actualWeather.City);
+
+            return weathers;
         }
 
         private async Task<Weather> UpdateWeather(WeatherResponse weatherResponse)
