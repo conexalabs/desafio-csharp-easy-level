@@ -1,0 +1,29 @@
+version: '3.4'
+
+networks: 
+  dockersql-network:
+    driver: bridge
+    
+services:
+  webApp.API:
+    container_name: Conexa.API
+    image: conexa-api
+    build:
+      context: .
+      dockerfile: src/ConexaDesafio.Api/Dockerfile
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db.database
+
+  db.database:
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      MSSQL_PID: "Developer"
+      SA_PASSWORD: "ConexaDesafio@123"
+      ACCEPT_EULA: "Y"
