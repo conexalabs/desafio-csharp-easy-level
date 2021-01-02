@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using desafio_csharp_easy_level.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -11,29 +12,37 @@ namespace desafio_csharp_easy_level.Controllers
     [Route("api/forecast")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
+        [HttpGet("{name}")]
+        public ActionResult<WeatherForecast> TodayWeatherFromCityName(string name)
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
+            return CreatedAtAction("TodayWeatherFromCityName", new WeatherForecast { Name = name, Temp = 12.5, Date = "02/01/2021" });
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet("{lat},{lon}")]
+        public ActionResult<WeatherForecast> TodayWeatherFromCityCoordinate(double lat, double lon)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return CreatedAtAction("TodayWeatherFromCityCoordinate", new WeatherForecast { Name = "Alguma cidade", Temp = 21.5, Date = "02/01/2021" });
         }
+
+        [HttpGet("{name}")]
+        public ActionResult<IEnumerable<WeatherForecast>> HistoricWeatherFromCityName(string name)
+        {
+            return new List<WeatherForecast>{
+                new WeatherForecast { Name = "Alguma cidade", Temp = 21.5, Date = "02/01/2021" },
+                new WeatherForecast { Name = "Outra cidade", Temp = 21.5, Date = "02/01/2021" },
+                new WeatherForecast { Name = "Uma cidade", Temp = 21.5, Date = "02/01/2021" }
+            };
+        }
+
+        [HttpGet("{lat},{lon}")]
+        public ActionResult<IEnumerable<WeatherForecast>> HistoricWeatherFromCityCoordinate(double lat, double lon)
+        {
+            return new List<WeatherForecast>{
+                new WeatherForecast { Name = "Alguma cidade", Temp = 21.5, Date = "02/01/2021" },
+                new WeatherForecast { Name = "Outra cidade", Temp = 21.5, Date = "02/01/2021" },
+                new WeatherForecast { Name = "Uma cidade", Temp = 21.5, Date = "02/01/2021" }
+            };
+        }
+
     }
 }
