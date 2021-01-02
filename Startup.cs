@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using desafio_csharp_easy_level.Models;
+
 
 namespace desafio_csharp_easy_level
 {
@@ -24,6 +27,7 @@ namespace desafio_csharp_easy_level
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<WeatherContext>(opt => opt.UseInMemoryDatabase("WeatherForecast"));
             services.AddControllers();
         }
 
