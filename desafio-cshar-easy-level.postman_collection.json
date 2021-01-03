@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f25531a2-cf07-4a93-8ed3-e34975f2a356",
+		"name": "desafio-cshar-easy-level",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET current temp by city Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/current/goiania",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"current",
+						"goiania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET hitoric temps by city Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/historic/goiania",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"historic",
+						"goiania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET current temp by city Coords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/current/-16.6,-49.2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"current",
+						"-16.6,-49.2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET historic temps by city Coords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/historic/-16.6,-49.2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"historic",
+						"-16.6,-49.2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
