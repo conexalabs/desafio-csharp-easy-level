@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,8 @@ namespace desafio_csharp_easy_level.Models
         public double Temp { get; set; }
 
         [Required]
-        public string Date { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime Date { get; set; }
     }
 
     public class WeatherContext : DbContext

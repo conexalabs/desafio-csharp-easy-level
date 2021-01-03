@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/forecast",
+      "launchUrl": "api/current",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "desafio_csharp_easy_level": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/forecast",
+      "launchUrl": "api/current",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
