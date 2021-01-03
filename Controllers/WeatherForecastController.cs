@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using desafio_csharp_easy_level.Models;
+using desafio_csharp_easy_level.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -13,17 +14,18 @@ namespace desafio_csharp_easy_level.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private WeatherContext _context;
+        private OpenWeatherMap _owm;
+
         public WeatherForecastController(WeatherContext context)
         {
             _context = context;
+            _owm = new OpenWeatherMap();
         }
 
         [HttpGet("{name}")]
         public async Task<ActionResult<WeatherForecast>> TodayWeatherFromCityName(string name)
         {
-            double _temp = 12.5;
-            DateTime _date = DateTime.Now;
-            WeatherForecast currentForecast = new WeatherForecast { Name = name, Temp = _temp, Date = _date };
+            WeatherForecast currentForecast = await _owm.GetWeatherByName(name);
 
             _context.WeatherForecasts.Add(currentForecast);
             await _context.SaveChangesAsync();
@@ -34,9 +36,7 @@ namespace desafio_csharp_easy_level.Controllers
         [HttpGet("{lat},{lon}")]
         public async Task<ActionResult<WeatherForecast>> TodayWeatherFromCityCoordinate(double lat, double lon)
         {
-            double _temp = 12.5;
-            DateTime _date = DateTime.Now;
-            WeatherForecast currentForecast = new WeatherForecast { Name = "Cidadelândia", Temp = _temp, Date = _date };
+            WeatherForecast currentForecast = await _owm.GetWeatherByCoords(lat, lon);
 
             _context.WeatherForecasts.Add(currentForecast);
             await _context.SaveChangesAsync();
@@ -50,25 +50,29 @@ namespace desafio_csharp_easy_level.Controllers
     public class WeatherForecastHistoricController : ControllerBase
     {
         private WeatherContext _context;
+        private OpenWeatherMap _owm;
+
         public WeatherForecastHistoricController(WeatherContext context)
         {
             _context = context;
+            _owm = new OpenWeatherMap();
         }
 
         [HttpGet("{name}")]
-        public ActionResult<IEnumerable<WeatherForecast>> HistoricWeatherFromCityName(string name)
+        public async Task<ActionResult<IEnumerable<WeatherForecast>>> HistoricWeatherFromCityName(string name)
         {
-            List<WeatherForecast> historicList = _context.WeatherForecasts.Where(f => f.Name == name).ToList();
+            string _name = await _owm.GetCityNameByName(name);
+            List<WeatherForecast> historicList = _context.WeatherForecasts.Where(f => f.Name == _name).ToList();
             return historicList;
         }
 
         [HttpGet("{lat},{lon}")]
-        public ActionResult<IEnumerable<WeatherForecast>> HistoricWeatherFromCityCoordinate(double lat, double lon)
+        public async Task<ActionResult<IEnumerable<WeatherForecast>>> HistoricWeatherFromCityCoordinate(double lat, double lon)
         {
             // get city name from OWM
-            string name = "goiania";
+            string _name = await _owm.GetCityNameByCoords(lat, lon);
 
-            List<WeatherForecast> historicList = _context.WeatherForecasts.Where(f => f.Name == name).ToList();
+            List<WeatherForecast> historicList = _context.WeatherForecasts.Where(f => f.Name == _name).ToList();
             return historicList;
         }
     }
