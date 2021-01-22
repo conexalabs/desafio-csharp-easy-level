@@ -69,3 +69,15 @@ Obs.: Não se preocupe com os pontos extras, faça-os se você se sentir confort
   * Manutenabilidade;
   * Testes Unitários
   * ... pois avaliaremos tudo isso!
+
+# Instruções
+
+*OBS:* Primeiramente, configurar usuário e senha do SQL Server no arquivo: WebAPI\appsettings.json
+
+1. Abra o CMD no diretório WebAPI.
+1.1. Instalar o EntityFrameworkCore Tools através do comando: *dotnet tool install --global dotnet-ef* (Pular etapa se já instalado)
+3. Executar o Entity Framework para gerar a base de dados: *dotnet ef database update*
+4. Dar Build no projeto: *dotnet build .\WebAPI.sln*
+4. Dar Publish no projeto: *dotnet publish WebAPI.sln -o .\Dist*
+5. Navegar ate o diretório *cd Dist*
+6. Executar a API: *dotnet .\WebAPI.dll*
