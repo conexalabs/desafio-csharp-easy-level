@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "678f4a3a-29c3-49af-bbeb-b8c99ce3c94e",
+		"name": "DesafioConexa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ByCityName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/weather/bycityname?cityname=Goiania",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather",
+						"bycityname"
+					],
+					"query": [
+						{
+							"key": "cityname",
+							"value": "Goiania",
+							"description": "Nome da Cidade"
+						}
+					]
+				},
+				"description": "Obtém a cidade da API do OpenWeather, persiste no BD e retorna a temperatura!"
+			},
+			"response": []
+		},
+		{
+			"name": "ByGeoCoordinates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/weather/bygeocoordinates?latitude=-15,25&longitude=-46,275",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather",
+						"bygeocoordinates"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-15,25",
+							"description": "Coordenada de Latitude"
+						},
+						{
+							"key": "longitude",
+							"value": "-46,275",
+							"description": "Coordenada de Longitude"
+						}
+					]
+				},
+				"description": "Obtém os dados da localidade através de coordenadas geográficaas na API do OpenWeather, persiste no BD e retorna a temperatura!"
+			},
+			"response": []
+		},
+		{
+			"name": "MonthWeatherByCityName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Weather/MonthWeatherByCityName?cityname=Goiânia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Weather",
+						"MonthWeatherByCityName"
+					],
+					"query": [
+						{
+							"key": "cityname",
+							"value": "Goiânia",
+							"description": "Nome da cidade"
+						}
+					]
+				},
+				"description": "Obtém os dados históricos localidade nos últimos 30 dias através do nome da cidade consultando os dados armazenados em banco as temperaturas registradas!"
+			},
+			"response": []
+		},
+		{
+			"name": "MonthWeatherByGeoCoordinates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Weather/MonthWeatherByGeoCoordinates?latitude=-15,25&longitude=-46,275",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Weather",
+						"MonthWeatherByGeoCoordinates"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-15,25",
+							"description": "Coordenada de Latitude"
+						},
+						{
+							"key": "longitude",
+							"value": "-46,275",
+							"description": "Coordenada de Longitude"
+						}
+					]
+				},
+				"description": "Obtém os dados históricos localidade nos últimos 30 dias através das coordenadas geográficas consultando os dados armazenados em banco e retornando temperaturas registradas!"
+			},
+			"response": []
+		}
+	]
+}
