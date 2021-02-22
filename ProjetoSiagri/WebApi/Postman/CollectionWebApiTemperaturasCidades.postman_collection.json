@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "78a23ed5-d2bd-435c-a1d5-d6891efff993",
+		"name": "CollectionWebApiTemperaturasCidades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "historicoTemperaturasPorCidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44306/temperatura/historicoTemperaturasPorCidade?nome=anápolis",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"temperatura",
+						"historicoTemperaturasPorCidade"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "anápolis"
+						}
+					]
+				},
+				"description": "Retorna histórico de temperaturas por cidade"
+			},
+			"response": []
+		},
+		{
+			"name": "cidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Retorna temperatura atual da cidade pelo nome"
+			},
+			"response": []
+		},
+		{
+			"name": "geolocalizacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "REtorna a temperatura atual pela latitude e longitude"
+			},
+			"response": []
+		},
+		{
+			"name": "historicoTemperaturasPorGeolocalizacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Retorna historico de temperaturas pela latitude e longitude"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
