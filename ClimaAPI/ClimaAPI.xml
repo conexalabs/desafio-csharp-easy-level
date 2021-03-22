@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClimaAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ClimaAPI.Controllers.RegistrosController.Post(System.String)">
+            <summary>
+            Recebe o nome da cidade, faz a persistência do resultado e retorna a temperatura atual.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST
+                https://localhost:44372/api/clima/Goiânia
+            
+            </remarks>
+            <param name="nomeDaCidade"></param>
+            <returns>Se não houver erros, retorna o registro com a data e temperatura atuais e o nome da cidade.</returns>
+        </member>
+        <member name="M:ClimaAPI.Controllers.RegistrosController.Post(System.Double,System.Double)">
+            <summary>
+            Recebe a latitude e longitude da cidade, faz a persistência do resultado e retorna a temperatura atual.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST
+                https://localhost:44372/api/clima?latitude=12&amp;longitude=12
+            
+            </remarks>
+            <param name="latitude"></param>
+            <param name="longitude"></param>
+            <returns>Se não houver erros, retorna o registro com a data e temperatura atuais e o nome da cidade.</returns>
+        </member>
+        <member name="M:ClimaAPI.Controllers.RegistrosController.GetHistorico(System.String,System.Double,System.Double)">
+            <summary>
+            Recebe o nome da cidade ou a latitude e a longitude, faz a persistência do resultado e retorna a temperatura atual.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                GET
+                https://localhost:44372/api/clima/GetHistorico?nomeDaCidade=Goiânia
+                https://localhost:44372/api/clima/GetHistorico?latitude=12&amp;longitude=12
+            
+            </remarks>
+            <param name="nomeDaCidade"></param>
+            <param name="latitude"></param>
+            <param name="longitude"></param>
+            <returns>Se não houver erros, retorna o histórico de registros do último mês com as datas, as temperaturas e o nome da cidade.</returns>
+        </member>
+    </members>
+</doc>

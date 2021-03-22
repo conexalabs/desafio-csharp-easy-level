@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "10f09bf1-6a7f-4250-a06d-5fcce72eff8f",
+		"name": "ClimaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST com o nome da cidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/clima/Parauna",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"clima",
+						"Parauna"
+					]
+				},
+				"description": "Executa um POST na API onde será persistido o resultado em um banco de dados. Após o sucesso, retorna a temperatura atual com o nome da cidade e a data atual."
+			},
+			"response": []
+		},
+		{
+			"name": "POST com a latitude e longitude da cidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/clima?latitude=12&longitude=12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"clima"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "12"
+						},
+						{
+							"key": "longitude",
+							"value": "12"
+						}
+					]
+				},
+				"description": "Executa um POST na API onde será persistido o resultado em um banco de dados. Após o sucesso, retorna a temperatura atual com o nome da cidade e a data atual."
+			},
+			"response": []
+		},
+		{
+			"name": "GET com o nome da cidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/clima/GetHistorico?nomeDaCidade=Goiânia",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"clima",
+						"GetHistorico"
+					],
+					"query": [
+						{
+							"key": "nomeDaCidade",
+							"value": "Goiânia"
+						}
+					]
+				},
+				"description": "Executa um GET na API para ser retornado o histórico, salvo no banco de dados, da cidade passada por parâmetro."
+			},
+			"response": []
+		},
+		{
+			"name": "GET com a latitude e longitude da cidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/clima/GetHistorico?latitude=12&longitude=12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"clima",
+						"GetHistorico"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "12"
+						},
+						{
+							"key": "longitude",
+							"value": "12"
+						}
+					]
+				},
+				"description": "Executa um GET na API para ser retornado o histórico, salvo no banco de dados, da cidade passada por parâmetro."
+			},
+			"response": []
+		}
+	]
+}
