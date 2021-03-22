@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "10f09bf1-6a7f-4250-a06d-5fcce72eff8f",
+		"_postman_id": "8d7cf6bd-b008-4869-9423-75b0ecf8c6d1",
 		"name": "ClimaAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,16 +11,16 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44372/api/clima/Parauna",
+					"raw": "https://localhost:5000/api/clima/Goiânia",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44372",
+					"port": "5000",
 					"path": [
 						"api",
 						"clima",
-						"Parauna"
+						"Goiânia"
 					]
 				},
 				"description": "Executa um POST na API onde será persistido o resultado em um banco de dados. Após o sucesso, retorna a temperatura atual com o nome da cidade e a data atual."
@@ -33,12 +33,12 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44372/api/clima?latitude=12&longitude=12",
+					"raw": "https://localhost:5000/api/clima?latitude=12&longitude=12",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44372",
+					"port": "5000",
 					"path": [
 						"api",
 						"clima"
@@ -64,12 +64,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44372/api/clima/GetHistorico?nomeDaCidade=Goiânia",
+					"raw": "https://localhost:5000/api/clima/GetHistorico?nomeDaCidade=Goiânia",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44372",
+					"port": "5000",
 					"path": [
 						"api",
 						"clima",
@@ -92,12 +92,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44372/api/clima/GetHistorico?latitude=12&longitude=12",
+					"raw": "https://localhost:5000/api/clima/GetHistorico?latitude=12&longitude=12",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "44372",
+					"port": "5000",
 					"path": [
 						"api",
 						"clima",
