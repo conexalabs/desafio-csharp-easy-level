@@ -15,4 +15,3 @@ services:
     image: renanfssilva/desafio-conexa:latest
     ports:
       - "5000:5000"
-      
