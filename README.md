@@ -1,71 +1,66 @@
 # Desafio C# Easy Level - ConexaLabs 2020
 
-Quer fazer parte da transformação do campo ~~escrevendo~~ codando o futuro do agronegócio?
-
-Se deseja participar do nosso processo seletivo, siga as instruções deste desafio e execute os seguintes passos: 
-
-* Nos mande sua resolução em um *pull request* neste repositório.
-
-* Deixe a aplicação disponível publicamente em imagem docker em qualquer host. Na descrição do PR passe o link para que consigamos usar sua imagem.
-
-* Por último, caso você ainda não esteja no processo seletivo, envie um email para [renatto.machado@hubconexa.com](mailto:renatto.machado@hubconexa.com) com seu CV anexado e o link da aplicação (se já estiver no processo seletivo, não precisa);
-
-  
-
-# Sobre a Conexa
-
-A [Conexa](http://hubconexa.com/) é um hub de inovação que vive o agronegócio e é protagonista em sua transformação e unimos pessoas que compartilham a crença de que o mundo pode ser mais sustentável e que o trabalho pode ser mais prazeroso.
-
-A equipe da Conexa Labs tem o propósito de tornar o agro mais simples, usando o que há de mais avançado em tecnologia para construir produtos e ferramentas que conectam pessoas e negócios aos resultados desejados.
-
-
-
 # O desafio
 
 Crie um microsserviço capaz de aceitar solicitações RESTful que recebam como parâmetro o nome da cidade ou as coordenadas (*latitude e longitude*), faça persistência da temperatura da cidade naquele dia em um banco de dados MSSQL e retorne a temperatura atual e se houver, o histórico de temperaturas do último mês.
-
-
 
 ## Requisitos
 
 1. Ter um endpoint que receba o nome da cidade, faça persistência do resultado e retorne a temperatura atual;
 2. Ter um endpoint que receba a latitude e longitude, faça persistência do resultado e retorne a temperatura atual;
-3. Tem um endpiont que receba o nome da cidade ou a latitude e longitude, e retorne o histórico de temperaturas para a localidade no último mês;
+3. Tem um endpoint que receba o nome da cidade ou a latitude e longitude, e retorne o histórico de temperaturas para a localidade no último mês;
 
-## Requisitos não funcionais
+## Estrutura
 
-- Como este serviço será um sucesso mundial, ele deve estar preparado para ser tolerante a falhas, responsivo e resiliente.
+O projeto está em uma estrutura DDD (*Domain-Driven Design*) porque é uma estrutura prática, além de facilitar o escalonamento do projeto e a simplificação do acesso ao banco de dados.
+Para a manipulação do banco foi utilizado o [EF Core](https://docs.microsoft.com/pt-br/ef/core/) juntamente com o [AutoMapper](https://docs.automapper.org/en/stable/Getting-started.html) para o mapeamento, facilitando o desenvolvimento ao não precisar utilizar consultas e mapeamentos manuais.
+O projeto possui IoC (Inversion of Control), foi utilizado o [Autofac](https://autofac.org/) que é um container responsável por facilitar essa inversão.
+Por fim, foi utilizado o padrão de design chamado de [injeção de dependência](https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1) contribuindo também com a inversão de controle.
 
-- Use qualquer ferramenta e estrutura com as quais se sinta confortável e elabore brevemente sua solução, detalhes de arquitetura, escolha de padrões e estruturas.
+## Inicializando o projeto
 
-- Será considerado ponto extra: 
-  - se sua aplicação tiver sua imagem publicada no [Docker Hub](https://hub.docker.com);
-  - se sua aplicação tiver mais de 60% de cobertura de testes unitários usando xUnit;
-  - se você colocar no seu projeto uma pasta com as colections do Postmann prontas para serem executadas;
-  - se sua aplicação tiver documentada no swagger no seguinte endpoint: /api/documentation;
-  - se seu projeto vir com um docker compose com sua aplicação e sql server configurados e funcionando;
-  
-Obs.: Não se preocupe com os pontos extras, faça-os se você se sentir confortável e se tiver tempo, consideraremos seu código **desclassificado se seu projeto não estiver funcionando** ou se não tiver os requisitos básicos implementados e funcionais.
+### SQL
+Primeiramente, para rodar o sql server em docker, será preciso utilizar a imagem `renanfssilva/sql` presente no Docker Hub. Na imagem está presente uma estrutura simples de banco de dados. Se houver problemas ao utilizar a imagem, a estrutura pode ser montada a partir dos seguintes comandos:
 
-## Dicas
+```sql
+CREATE DATABASE ClimaAPI
+```
 
-- Você pode usar a API do *[OpenWeatherMaps](https://openweathermap.org)* para buscar dados de temperatura;
-- Não é necessário ter um banco de dados hospedado, você pode usar SQL Server InMemory ou rodar o sql server em um container (neste caso, deixe documentado no readme.md como executar os dois containers);
-- Se tiver dificuldades em usar o SQL Server InMemory, pode persistir de qualquer outra forma que se sentir confortável;
-- Certifique-se que sua imagem está funcionando perfeitamente com um simples: `docker run -d --name desafio-csharp-easy -port 5000:5000 [seu_docker_hub]/desafio-conexa`, isso te dará pontos extras;
+Após a criação da base ClimaAPI, rodar os seguintes comandos no contexto da base ClimaAPI:
 
-## Recomendações
+```sql
+CREATE TABLE Cidades (
+	CidadeID int NOT NULL,
+	Nome varchar(100) NOT NULL,
+	Latitude float NULL,
+	Longitude float NULL,
+	Primary Key (CidadeId)
+);
 
-* Utilize C#;
-* Utilize .NET Core 3.1;
-* Utilize docker;
-* Utilize boas práticas de codificação, isso será avaliado;
-* Mostre que você manja dos paranauê do C#;
-* Código limpo, organizado e documentado (quando necessário);
-* Use e abuse de:
-  * SOLID;
-  * Criatividade;
-  * Performance;
-  * Manutenabilidade;
-  * Testes Unitários
-  * ... pois avaliaremos tudo isso!
+CREATE TABLE Registros (
+	RegistroID int IDENTITY(1,1) NOT NULL,
+	Temperatura float NULL,
+	Data datetime NOT NULL,
+	CidadeID int NULL,
+	FOREIGN KEY (CidadeID) REFERENCES Cidades(CidadeID)
+);
+
+ALTER TABLE Cidades ALTER COLUMN Nome [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AI
+```
+### API
+Para utilizar a API, é possível utilizar o comando `docker-compose up` na pasta que contenha o docker-compose.yml. Após os containers estiverem rodando, é só acessar a url `http://localhost:5000/api/documentation` para ler a documentação gerada pelo Swagger.
+
+O JSON [ClimaAPI.postman_collection.json](https://github.com/renanfssilva/desafio-csharp-easy-level/blob/master/ClimaAPI.postman_collection.json) pode ser utilizado para gerar alguns resultados na API e alimentar o banco.
+
+## Ferramentas utilizadas
+
+* [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/);
+* [.NET Core 3.1](https://docs.microsoft.com/pt-br/dotnet/core/introduction);
+* [EF Core](https://docs.microsoft.com/pt-br/ef/core/);
+* [AutoMapper](https://docs.automapper.org/en/stable/Getting-started.html);
+* [Autofac](https://autofac.org/);
+* [SQL Server](https://docs.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver15);
+* [Docker](https://www.docker.com/);
+* [Swagger](https://swagger.io/);
+* [Postman](https://www.postman.com/);
+* API [OpenWeatherMaps](https://openweathermap.org)
