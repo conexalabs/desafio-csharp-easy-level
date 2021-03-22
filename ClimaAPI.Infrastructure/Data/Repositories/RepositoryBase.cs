@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using ClimaAPI.Domain.Interfaces.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 namespace ClimaAPI.Infrastructure.Data.Repositories
 {
@@ -36,32 +35,6 @@ namespace ClimaAPI.Infrastructure.Data.Repositories
         public TEntity GetById(int id)
         {
             return _sqlContext.Set<TEntity>().Find(id);
-        }
-
-        public void Remove(TEntity obj)
-        {
-            try
-            {
-                _sqlContext.Set<TEntity>().Remove(obj);
-                _sqlContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public void Update(TEntity obj)
-        {
-            try
-            {
-                _sqlContext.Entry(obj).State = EntityState.Modified;
-                _sqlContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using ClimaAPI.Application.Interfaces;
+﻿using ClimaAPI.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClimaAPI.Controllers
@@ -22,7 +21,7 @@ namespace ClimaAPI.Controllers
         /// Sample request:
         /// 
         ///     POST
-        ///     https://localhost:44372/api/clima/Goiânia
+        ///     https://localhost:5000/api/clima/Goiânia
         /// 
         /// </remarks>
         /// <param name="nomeDaCidade"></param>
@@ -49,7 +48,7 @@ namespace ClimaAPI.Controllers
         /// Sample request:
         /// 
         ///     POST
-        ///     https://localhost:44372/api/clima?latitude=12&amp;longitude=12
+        ///     https://localhost:5000/api/clima?latitude=12&amp;longitude=12
         /// 
         /// </remarks>
         /// <param name="latitude"></param>
@@ -77,8 +76,8 @@ namespace ClimaAPI.Controllers
         /// Sample request:
         /// 
         ///     GET
-        ///     https://localhost:44372/api/clima/GetHistorico?nomeDaCidade=Goiânia
-        ///     https://localhost:44372/api/clima/GetHistorico?latitude=12&amp;longitude=12
+        ///     https://localhost:5000/api/clima/GetHistorico?nomeDaCidade=Goiânia
+        ///     https://localhost:5000/api/clima/GetHistorico?latitude=12&amp;longitude=12
         /// 
         /// </remarks>
         /// <param name="nomeDaCidade"></param>

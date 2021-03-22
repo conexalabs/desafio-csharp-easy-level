@@ -21,4 +21,3 @@ namespace ClimaAPI.Application.Mappers
         }
     }
 }
-
