@@ -20,7 +20,7 @@ Por fim, foi utilizado o padrão de design chamado de [injeção de dependência
 ## Inicializando o projeto
 
 ### SQL
-Primeiramente, para rodar o sql server em docker, será preciso utilizar a imagem `renanfssilva/sql` presente no Docker Hub. Na imagem está presente uma estrutura simples de banco de dados. Se houver problemas ao utilizar a imagem, a estrutura pode ser montada a partir dos seguintes comandos:
+Primeiramente, para rodar o sql server em docker, será preciso utilizar a imagem `renanfssilva/sql` presente no Docker Hub, o comando para subir o banco é `docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Banco123" -p 1433:1433 renanfssilva/sql`. Na imagem está presente uma estrutura simples de banco de dados. Se houver problemas ao utilizar a imagem, a estrutura pode ser montada a partir dos seguintes comandos:
 
 ```sql
 CREATE DATABASE ClimaAPI
