@@ -1,5 +1,4 @@
-using Domain.Entidades;
-using Domain.Entidades.City;
+using Application.Entidades.City;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Data.DBContext

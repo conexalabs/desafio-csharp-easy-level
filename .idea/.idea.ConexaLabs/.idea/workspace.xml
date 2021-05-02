@@ -5,15 +5,129 @@
     <projectFile>WebApplication/WebApplication.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="" />
+    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Criando projeto inicial da Conexa">
+      <change afterPath="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infra.Data/Repositories/Base/RepositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/CityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConexaLabs.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaLabs.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entidades/Base/EntityBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entidades/City/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/City/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entidades/City/Coord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/City/Coord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp3.1/Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp3.1/Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp3.1/Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Domain.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/Infra.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Infra.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Infra.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Infra.Data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/Web.Mvc.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Debug/netcoreapp3.1/Web.Mvc.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Web.Mvc.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Web.Mvc.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/Web.Mvc.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.Mvc/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Web.Mvc/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/687CD3EF-1206-406C-8B82-2CB02EE0595E/f5/8df11676/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,17 +140,23 @@
         <option value="$PROJECT_DIR$/Domain/Entity/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/Base/EntityBase.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/City.cs" />
         <option value="$PROJECT_DIR$/WebApplication/appsettings.json" />
         <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/Coord.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/CityViewModel.cs" />
+        <option value="$PROJECT_DIR$/Application/Interfaces/CityService.cs" />
+        <option value="$PROJECT_DIR$/Domain/Interfaces/City/ICityRepository.cs" />
+        <option value="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IRepository.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/Repositories/RepositoryBase.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/Repositories/Base/RepositoryBase.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1rx6TeKyhhes94EOr5dlysmtu0C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +168,36 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication: IIS Express">
+    <configuration name="TesteUnit" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TesteUnit/TesteUnit.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="TesteUnit" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="TesteUnit: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TesteUnit/TesteUnit.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="WebApplication" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplication/WebApplication.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -117,8 +267,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619905403152</updated>
-      <workItem from="1619905405896" duration="3096000" />
+      <workItem from="1619905405896" duration="6669000" />
     </task>
+    <task id="LOCAL-00001" summary="Criando projeto inicial da Conexa">
+      <created>1619913008581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619913008581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +284,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Criando projeto inicial da Conexa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando projeto inicial da Conexa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size" timestamp="1619910891787">

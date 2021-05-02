@@ -7,8 +7,25 @@
       <e p="Application" t="IncludeRecursive">
         <e p="Application.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Entidades" t="Include">
+          <e p="Base" t="Include">
+            <e p="EntityBase.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="City.cs" t="Include" />
+            <e p="Coord.cs" t="Include" />
+          </e>
+        </e>
         <e p="Interfaces" t="Include">
-          <e p="CityService.cs" t="Include" />
+          <e p="Repository" t="Include">
+            <e p="Base" t="Include">
+              <e p="IRepository.cs" t="Include" />
+            </e>
+            <e p="ICityRepository.cs" t="Include" />
+          </e>
+          <e p="Service" t="Include">
+            <e p="ICityService.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -25,27 +42,6 @@
         </e>
       </e>
       <e p="ConexaLabs.sln" t="IncludeFlat" />
-      <e p="Domain" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
-        <e p="Domain.csproj" t="IncludeRecursive" />
-        <e p="Entidades" t="Include">
-          <e p="Base" t="Include">
-            <e p="EntityBase.cs" t="Include" />
-          </e>
-          <e p="City" t="Include">
-            <e p="City.cs" t="Include" />
-            <e p="Coord.cs" t="Include" />
-          </e>
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Domain.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-      </e>
       <e p="Infra.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DBContext" t="Include">
@@ -67,6 +63,11 @@
             </e>
           </e>
         </e>
+        <e p="Repositories" t="Include">
+          <e p="Base" t="Include">
+            <e p="RepositoryBase.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Infrastructure.IoC" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -81,6 +82,24 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="TesteUnit" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TesteUnit.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TesteUnit.csproj" t="IncludeRecursive" />
+      </e>
       <e p="WebApplication" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />

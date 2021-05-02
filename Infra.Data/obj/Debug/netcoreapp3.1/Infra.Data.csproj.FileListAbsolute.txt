@@ -3,8 +3,6 @@ C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Infra
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Infra.Data.runtimeconfig.dev.json
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Infra.Data.dll
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Infra.Data.pdb
-C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Domain.dll
-C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.csprojAssemblyReference.cache
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.AssemblyInfoInputs.cache
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.AssemblyInfo.cs
@@ -13,3 +11,5 @@ C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.dll
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.pdb
 C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\obj\Debug\netcoreapp3.1\Infra.Data.genruntimeconfig.cache
+C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\bin\Debug\netcoreapp3.1\Application.pdb

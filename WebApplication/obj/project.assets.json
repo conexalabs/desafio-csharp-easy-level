@@ -1483,21 +1483,21 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Application.dll": {}
         }
       },
       "Infra.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Domain": "1.0.0",
+          "Application": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
         },
         "compile": {
@@ -5719,10 +5719,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Domain/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
     },
     "Infra.Data/1.0.0": {
       "type": "project",

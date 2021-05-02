@@ -4,14 +4,14 @@
     "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infra.Data\\Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj": {
+    "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\breno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\breno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj"
+              "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj"
               }
             }
           }

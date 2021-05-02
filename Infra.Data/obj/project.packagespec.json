@@ -16,8 +16,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj": {
-            "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj"
+          "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj": {
+            "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj"
           }
         }
       }

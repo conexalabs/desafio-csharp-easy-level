@@ -1,0 +1,9 @@
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Infrastructure.IoC.deps.json
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Infrastructure.IoC.dll
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Infrastructure.IoC.pdb
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.csprojAssemblyReference.cache
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.AssemblyInfoInputs.cache
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.AssemblyInfo.cs
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.csproj.CoreCompileInputs.cache
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.dll
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.pdb

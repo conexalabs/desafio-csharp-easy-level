@@ -1521,14 +1521,14 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Application.dll": {}
         }
       }
     }
@@ -5799,15 +5799,15 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Domain/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Domain >= 1.0.0",
+      "Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
@@ -5839,8 +5839,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Domain\\Domain.csproj"
+            "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj"
             }
           }
         }

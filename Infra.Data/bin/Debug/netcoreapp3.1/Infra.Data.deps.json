@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Infra.Data/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0",
+          "Application": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.5"
@@ -1083,9 +1083,9 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "Domain/1.0.0": {
+      "Application/1.0.0": {
         "runtime": {
-          "Domain.dll": {}
+          "Application.dll": {}
         }
       }
     }
@@ -1775,7 +1775,7 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "Domain/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
