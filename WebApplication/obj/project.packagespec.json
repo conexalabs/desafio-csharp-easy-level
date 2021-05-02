@@ -18,6 +18,9 @@
         "projectReferences": {
           "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infra.Data\\Infra.Data.csproj": {
             "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infra.Data\\Infra.Data.csproj"
+          },
+          "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infrastructure.IoC\\Infrastructure.IoC.csproj": {
+            "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infrastructure.IoC\\Infrastructure.IoC.csproj"
           }
         }
       }
@@ -32,6 +35,10 @@
     "netcoreapp3.1": {
       "dependencies": {
         "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[5.0.5, )"
+        },
+        "Microsoft.EntityFrameworkCore.InMemory": {
           "target": "Package",
           "version": "[5.0.5, )"
         }

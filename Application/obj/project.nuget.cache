@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "739CyzXTzrwAOzPG29gRJgJi/w02XB0QX+m45bCGwf2v0D6aT1q2WpaU7Oy1aVIJ/IG3T3JM7h9EYclD2tWLew==",
+  "dgSpecHash": "waG47AkVRRs0p93LrCscezOOwawSJ+PvoybVv/6piXTxteOJm/Si0sSILXwrIrE0qmiomM4KN1Rz3SmeWPnsrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\breno\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

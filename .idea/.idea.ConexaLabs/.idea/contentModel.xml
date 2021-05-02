@@ -6,6 +6,12 @@
     <e p="C:\Users\breno\RiderProjects\ConexaLabs" t="IncludeFlat">
       <e p="Application" t="IncludeRecursive">
         <e p="Application.csproj" t="IncludeRecursive" />
+        <e p="Application.csproj.DotSettings" t="Include" />
+        <e p="AutoMapper" t="Include">
+          <e p="City" t="Include">
+            <e p="CityProfile.cs" t="Include" />
+          </e>
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Entidades" t="Include">
           <e p="Base" t="Include">
@@ -59,11 +65,14 @@
           <e p="ConexaDesignContextFactory.cs" t="Include" />
         </e>
         <e p="Infra.Data.csproj" t="IncludeRecursive" />
+        <e p="Infra.Data.csproj.DotSettings" t="Include" />
         <e p="Migrations" t="Include">
           <e p="20210501232959_initialCreate.cs" t="Include" />
           <e p="20210501232959_initialCreate.Designer.cs" t="Include" />
           <e p="20210501234346_RemoveMappedForCoord.cs" t="Include" />
           <e p="20210501234346_RemoveMappedForCoord.Designer.cs" t="Include" />
+          <e p="20210502065703_Teste.cs" t="Include" />
+          <e p="20210502065703_Teste.Designer.cs" t="Include" />
           <e p="ConexaContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -75,7 +84,7 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="Base" t="Include">
-            <e p="RepositoryBase.cs" t="Include" />
+            <e p="BaseRepository.cs" t="Include" />
           </e>
           <e p="City" t="Include">
             <e p="CityRepository.cs" t="Include" />
@@ -84,7 +93,9 @@
       </e>
       <e p="Infrastructure.IoC" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="Dependency" t="Include">
+          <e p="DependencyContainer.cs" t="Include" />
+        </e>
         <e p="Infrastructure.IoC.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -118,8 +129,10 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="CidadeController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">

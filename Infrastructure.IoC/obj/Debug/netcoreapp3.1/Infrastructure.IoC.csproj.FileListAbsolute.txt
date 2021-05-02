@@ -7,3 +7,8 @@ C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3
 C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.csproj.CoreCompileInputs.cache
 C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.dll
 C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.pdb
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Infra.Data.dll
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\bin\Debug\netcoreapp3.1\Infra.Data.pdb
+C:\Users\breno\RiderProjects\ConexaLabs\Infrastructure.IoC\obj\Debug\netcoreapp3.1\Infrastructure.IoC.csproj.CopyComplete

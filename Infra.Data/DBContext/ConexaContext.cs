@@ -5,7 +5,7 @@ namespace Infra.Data.DBContext
 {
     public class ConexaContext : DbContext
     {
-        public ConexaContext(DbContextOptions options) : base(options){}
+        public ConexaContext(DbContextOptions<ConexaContext> options) : base(options){}
         
         public DbSet<City> Citys { get; set; }        
     }

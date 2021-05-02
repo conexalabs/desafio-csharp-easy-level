@@ -6,10 +6,12 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.5" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Infra.Data\Infra.Data.csproj" />
+      <ProjectReference Include="..\Infrastructure.IoC\Infrastructure.IoC.csproj" />
     </ItemGroup>
 
 

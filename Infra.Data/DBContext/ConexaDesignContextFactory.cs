@@ -8,8 +8,7 @@ namespace Infra.Data.DBContext
         public ConexaContext CreateDbContext(string[] args)
         {
             var optionsBuilde = new DbContextOptionsBuilder<ConexaContext>();
-            optionsBuilde.UseSqlServer(
-                @"Server=localhost\MSSQLSERVER03;Database=ConexaDB; Integrated Security=True");
+            optionsBuilde.UseInMemoryDatabase("ConexaDb").EnableDetailedErrors();
             return new ConexaContext(optionsBuilde.Options);
         }
     }

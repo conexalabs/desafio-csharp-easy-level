@@ -63,3 +63,8 @@ C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\obj\Debug\netcoreapp3.1\s
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Infrastructure.IoC.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Infrastructure.IoC.pdb
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
