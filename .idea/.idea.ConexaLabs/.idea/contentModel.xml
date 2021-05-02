@@ -19,11 +19,14 @@
         <e p="Interfaces" t="Include">
           <e p="Repository" t="Include">
             <e p="Base" t="Include">
-              <e p="IRepository.cs" t="Include" />
+              <e p="IBaseRepository.cs" t="Include" />
             </e>
             <e p="ICityRepository.cs" t="Include" />
           </e>
           <e p="Service" t="Include">
+            <e p="Base" t="Include">
+              <e p="IBaseService.cs" t="Include" />
+            </e>
             <e p="ICityService.cs" t="Include" />
           </e>
         </e>
@@ -34,7 +37,14 @@
             </e>
           </e>
         </e>
-        <e p="Services" t="Include" />
+        <e p="Services" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseService.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="CityService.cs" t="Include" />
+          </e>
+        </e>
         <e p="ViewModels" t="Include">
           <e p="City" t="Include">
             <e p="CityViewModel.cs" t="Include" />
@@ -66,6 +76,9 @@
         <e p="Repositories" t="Include">
           <e p="Base" t="Include">
             <e p="RepositoryBase.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="CityRepository.cs" t="Include" />
           </e>
         </e>
       </e>

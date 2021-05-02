@@ -5,7 +5,7 @@ using Infra.Data.DBContext;
 
 namespace Infra.Data.Repositories.Base
 {
-    public class RepositoryBase<T> : IRepository<T> where T : EntityBase
+    public class RepositoryBase<T> : IBaseRepository<T> where T : EntityBase
     {
         private readonly ConexaContext _conexaContext;
         public RepositoryBase(ConexaContext conexadb)

@@ -2,7 +2,7 @@ using Application.ViewModels.City;
 
 namespace Application.Interfaces.Service
 {
-    public interface CityService
+    public interface ICityService
     {
         CityViewModel GetTempCidade();
     }
