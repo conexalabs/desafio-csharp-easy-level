@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Application.Interfaces.Service;
 using Application.ViewModels.City;
+using Application.ViewModels.City.Response;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
@@ -19,15 +22,16 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
-        public CityViewModel Get([FromRoute] Guid id)
+        public async Task<IActionResult> Get(string cidade)
         {
-            return _cityService.GetById(id);
-        }
-        [HttpGet]
-        public IList<CityViewModel> GetAll()
-        {
-            return _cityService.GetAll();
+            try
+            {
+                return Ok(await _cityService.GetTempCidade(cidade));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

@@ -64,9 +64,8 @@ namespace WebApplication
         {
             var testeCity = new City()
             {
-                Id = Guid.NewGuid(),
-                Name = "CidadeTeste",
-                state = "EstadoTeste"
+                Id = 1010,
+                Name = "CidadeTeste"
             };
             context.Citys.Add(testeCity);
             context.SaveChanges();

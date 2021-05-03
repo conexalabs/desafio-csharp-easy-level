@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": -46.5373,
+    "lat": -18.5653
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "céu limpo",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 286.48,
+    "feels_like": 283.97,
+    "temp_min": 286.48,
+    "temp_max": 286.48,
+    "pressure": 1015,
+    "humidity": 4
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.42,
+    "deg": 124,
+    "gust": 1.43
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1620007535,
+  "sys": {
+    "type": 3,
+    "id": 2005160,
+    "country": "BR",
+    "sunrise": 1619947243,
+    "sunset": 1619988320
+  },
+  "timezone": -10800,
+  "id": 3454783,
+  "name": "Sorriso",
+  "cod": 200
+}

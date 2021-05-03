@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DRciPZPZNEuvkln4Bz8OZ2pG7AjjNAAXFfEs5ZhrZNSu+aNY8xwjp9wepZXBXTUrfn8fgHu1UobzdgVG66uK7w==",
+  "dgSpecHash": "EW98N/ebZVC1npbA3uTFnf8MJZJRWSG7AGlYVWu9KcYr1I8PR+87iW4214tXVB2lEEbEE/70QYbuKF2/doeICQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Infra.Data\\Infra.Data.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

@@ -23,6 +23,9 @@
           </e>
         </e>
         <e p="Interfaces" t="Include">
+          <e p="ExternaWeatherMaps" t="Include">
+            <e p="IAPIExternalWeatherMaps.cs" t="Include" />
+          </e>
           <e p="Repository" t="Include">
             <e p="Base" t="Include">
               <e p="IBaseRepository.cs" t="Include" />
@@ -53,12 +56,25 @@
         </e>
         <e p="ViewModels" t="Include">
           <e p="City" t="Include">
-            <e p="CityViewModel.cs" t="Include" />
+            <e p="API" t="Include">
+              <e p="Coord.cs" t="Include" />
+              <e p="main.cs" t="Include" />
+            </e>
+            <e p="Request" t="Include">
+              <e p="CityViewModel.cs" t="Include" />
+            </e>
+            <e p="Response" t="Include">
+              <e p="CityViewModelResponse.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
       <e p="ConexaLabs.sln" t="IncludeFlat" />
       <e p="Infra.Data" t="IncludeRecursive">
+        <e p="APIExterna" t="Include">
+          <e p="APIExternalWeatherMaps.cs" t="Include" />
+          <e p="JsonExample.json" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="DBContext" t="Include">
           <e p="ConexaContext.cs" t="Include" />
@@ -130,7 +146,6 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="CidadeController.cs" t="Include" />
-          <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -145,7 +160,6 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
         <e p="WebApplication.csproj" t="IncludeRecursive" />
       </e>
     </e>

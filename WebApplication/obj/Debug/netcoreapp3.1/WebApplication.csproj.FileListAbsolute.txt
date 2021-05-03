@@ -68,3 +68,4 @@ C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\I
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll

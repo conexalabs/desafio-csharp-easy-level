@@ -7,5 +7,7 @@ namespace Application.Interfaces.Repository
     public interface ICityRepository : IBaseRepository<City>
     {
         IList<City> GetAll();
+        City GetByCidade(string cidade);
+        City GetByLonLat(string lon, string lat);
     }
 }
