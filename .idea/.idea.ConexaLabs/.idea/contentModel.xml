@@ -84,10 +84,13 @@
           <e p="ConexaContext.cs" t="Include" />
           <e p="ConexaDesignContextFactory.cs" t="Include" />
         </e>
-        <e p="Dockerfile" t="Include" />
         <e p="Infra.Data.csproj" t="IncludeRecursive" />
         <e p="Infra.Data.csproj.DotSettings" t="Include" />
-        <e p="Migrations" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20210504153029_InitialMigration.cs" t="Include" />
+          <e p="20210504153029_InitialMigration.Designer.cs" t="Include" />
+          <e p="ConexaContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">

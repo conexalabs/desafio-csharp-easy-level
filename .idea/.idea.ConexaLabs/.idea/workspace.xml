@@ -16,13 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Finaliza Service e adiciona comandos Docker">
-      <change afterPath="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConexaLabs.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaLabs.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -39,24 +38,34 @@
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitTest/obj/Debug/netcoreapp3.1/xUnitTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitTest/obj/Debug/netcoreapp3.1/xUnitTest.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitTest/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitTest/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,46 +84,76 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/8a/353633a7/IdentityMap`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6850AC36-3902-4274-8920-A316813D4FD3/A/InMemoryDbContextOptionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/0a/ff7e0f6b/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF4263DB-1990-4D27-8A08-3F2BC9AFBE0A/e7/a865a120/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ED034A4B-CA2E-4B03-B599-958B4A376BAF/37/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/184C119B-3094-4027-A59E-14EA4D85D4F7/d1/1ce69626/Host.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ED034A4B-CA2E-4B03-B599-958B4A376BAF/5E/ConnectHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1ADF0657-1585-46E0-8D0C-702F997D04A8/b8/c2d2f043/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/3A2/EventSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9D8DFFFD-C0AB-4261-8D79-37DA229B2646/1F/Socket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48F23A5D-0965-44C1-BCA7-4ED3E1516FC2/73/8bfa4009/EndpointRoutingApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18DBB77C-EAEF-4A87-809E-3E0C2811909B/69/25c48acb/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/62/ReflectionHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D0DCE0B-B567-4456-8451-1EAB6CCCDB13/ab/0e4999ca/HttpWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24840A40-1977-4459-B008-6F64B5C94A1F/6b/4fb8500e/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A33DF5F-92B3-4BA7-A019-8B2B11FCBF21/27/DatabaseGeneratedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/321/Stream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/F/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xUnitTest/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/40/62e34b4d/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/c6/3f9baf42/EntityFinder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/2FC/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/1a/522d0d54/StateManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/8a/353633a7/IdentityMap`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/0a/ff7e0f6b/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18DBB77C-EAEF-4A87-809E-3E0C2811909B/3/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/687CD3EF-1206-406C-8B82-2CB02EE0595E/f5/8df11676/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/184C119B-3094-4027-A59E-14EA4D85D4F7/d1/1ce69626/Host.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ED034A4B-CA2E-4B03-B599-958B4A376BAF/5E/ConnectHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1ADF0657-1585-46E0-8D0C-702F997D04A8/b8/c2d2f043/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/3A2/EventSource.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9D8DFFFD-C0AB-4261-8D79-37DA229B2646/1F/Socket.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48F23A5D-0965-44C1-BCA7-4ED3E1516FC2/73/8bfa4009/EndpointRoutingApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18DBB77C-EAEF-4A87-809E-3E0C2811909B/69/25c48acb/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/62/ReflectionHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/243C19E8-917A-4AB9-9E85-89305D7F1FCA/3F/SqlServerDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52A6E9AA-74AC-4C70-9FA9-63A6CCE87EDF/32/faccebd4/SingleQueryingEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D0DCE0B-B567-4456-8451-1EAB6CCCDB13/ab/0e4999ca/HttpWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24840A40-1977-4459-B008-6F64B5C94A1F/6b/4fb8500e/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A33DF5F-92B3-4BA7-A019-8B2B11FCBF21/27/DatabaseGeneratedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/321/Stream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/F/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/40/62e34b4d/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/c6/3f9baf42/EntityFinder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6850AC36-3902-4274-8920-A316813D4FD3/7f/037a04ae/InMemoryDbContextOptionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/2FC/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/84525B04-5EDB-4043-92D9-5A20A1EE4F64/11/CallSiteValidator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/1a/522d0d54/StateManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Domain/Entidades/Base/EntityBase.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/Coord.cs" />
@@ -158,13 +197,14 @@
         <option value="$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" />
         <option value="$PROJECT_DIR$/xUnitTest/Class1.cs" />
         <option value="$PROJECT_DIR$/WebApplication/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
         <option value="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
       </list>
     </option>
   </component>
@@ -175,15 +215,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.72204345" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.6190668" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34955752" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.2996782" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.35829493" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.WebApplication/Dockerfile">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication: IIS Express">
     <configuration name="TesteUnit" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TesteUnit/TesteUnit.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -277,14 +318,54 @@
     <configuration name="WebApplication/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
           <option name="sourceFilePath" value="WebApplication/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="composeFile" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="commandLineOptions" value="--build" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.desafio-csharp-easy-test: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="desafio-csharp-easy-test" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.TesteUnit" />
+      <item itemvalue=".NET Launch Settings Profile.TesteUnit: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Web.Mvc" />
+      <item itemvalue=".NET Launch Settings Profile.Web.Mvc: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.WebApplication" />
+      <item itemvalue=".NET Launch Settings Profile.WebApplication: IIS Express" />
+      <item itemvalue="Docker.composeFile" />
+      <item itemvalue="Docker.WebApplication/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.desafio-csharp-easy-test: Compose Deployment" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.WebApplication/Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml.desafio-csharp-easy-test: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +430,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -372,6 +463,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adiciona função para verificar se foi possível coletar os dados da API externa" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1776" y="581" key="#Port_bindings" timestamp="1620142905423">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1776" y="581" key="#Port_bindings/0.0.2560.1400@0.0.2560.1400" timestamp="1620142905423" />
+    <state x="1374" y="358" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620136192990">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1374" y="358" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620136192990" />
     <state width="685" height="466" key="DebuggerActiveHint" timestamp="1620097047828">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -380,86 +479,90 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620087848923" />
-    <state width="2517" height="515" key="GridCell.Tab.0.bottom" timestamp="1620128630728">
+    <state x="1758" y="583" key="DockerComposeFileDialog" timestamp="1620136137137">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.0.center" timestamp="1620128630727">
+    <state x="1758" y="583" key="DockerComposeFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620136137137" />
+    <state width="1234" height="486" key="GridCell.Tab.0.bottom" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630727" />
-    <state width="2517" height="515" key="GridCell.Tab.0.left" timestamp="1620128630727">
+    <state width="1234" height="486" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.0.center" timestamp="1620143639459">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630727" />
-    <state width="2517" height="515" key="GridCell.Tab.0.right" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639459" />
+    <state width="1234" height="486" key="GridCell.Tab.0.left" timestamp="1620143639459">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.1.bottom" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639459" />
+    <state width="1234" height="486" key="GridCell.Tab.0.right" timestamp="1620143639459">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.1.center" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639459" />
+    <state width="1234" height="486" key="GridCell.Tab.1.bottom" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.1.left" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.1.center" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.1.right" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.1.left" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.2.bottom" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.1.right" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.2.center" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.2.bottom" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.2.left" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.2.center" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.2.right" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.2.left" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.3.bottom" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.2.right" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.3.center" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.3.bottom" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.3.left" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.3.center" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.3.right" timestamp="1620128630728">
+    <state width="1234" height="486" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.3.left" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
-    <state width="2517" height="515" key="GridCell.Tab.4.bottom" timestamp="1620128630729">
+    <state width="1234" height="486" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.3.right" timestamp="1620143639460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
-    <state width="2517" height="515" key="GridCell.Tab.4.center" timestamp="1620128630729">
+    <state width="1234" height="486" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639460" />
+    <state width="1234" height="486" key="GridCell.Tab.4.bottom" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
-    <state width="2517" height="515" key="GridCell.Tab.4.left" timestamp="1620128630729">
+    <state width="1234" height="486" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.4.center" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
-    <state width="2517" height="515" key="GridCell.Tab.4.right" timestamp="1620128630729">
+    <state width="1234" height="486" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.4.left" timestamp="1620143639461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
+    <state width="1234" height="486" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
+    <state width="1234" height="486" key="GridCell.Tab.4.right" timestamp="1620143639461">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="486" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620143639461" />
     <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size" timestamp="1620110379409">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -480,6 +583,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1620095730658" />
+    <state x="242" y="36" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1620137875622">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="242" y="36" width="1094" height="1207" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620137875622" />
     <state x="832" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1619970506406">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -488,6 +595,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1273" y="0" width="1294" height="1407" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1620067000739" />
+    <state x="958" y="433" width="644" height="534" key="find.popup" timestamp="1620135042696">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="958" y="433" width="644" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1620135042696" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1619938002148">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -80,3 +80,8 @@ C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\d
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\WebApplication.deps.json
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\WebApplication.runtimeconfig.json
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Docker.DotNet.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cs

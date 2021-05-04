@@ -31,6 +31,14 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSwaggerGen(options =>  
+            {  
+                options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo  
+                {  
+                    Title = "Conexa Swagger",  
+                    Version = "v2" 
+                });  
+            });  
             RegisterServices(services);
             
             services.AddControllers();
@@ -52,12 +60,14 @@ namespace WebApplication
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetService<ConexaContext>();
+                
+                context.Database.Migrate();
+                Console.WriteLine(context.Database.GetConnectionString()+" O banco aqui #################################");
                 AdicionarDadosTeste(context);
             }
-           
-            
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-          
+            app.UseSwagger();  
+            app.UseSwaggerUI(options =>options.SwaggerEndpoint("/swagger/v2/swagger.json", "PlaceInfo Services"));
             
         }
         private static void AdicionarDadosTeste(ConexaContext context)
@@ -78,7 +88,8 @@ namespace WebApplication
             var user = Configuration["DBUser"] ?? "SA";
             var password = Configuration["DBPassword"] ?? "0rUOw5M5ad";
             var database = Configuration["Database"] ?? "ConexaDB";
-            services.AddDbContext<ConexaContext>(options => options.UseInMemoryDatabase("ConexaDB"));
+            services.AddDbContext<ConexaContext>(options => options.UseSqlServer(
+                $"Server={server},{port};Database={database};User Id={user};Password={password};"));
             DependencyContainer.RegisterServices(services);
         }
     }
