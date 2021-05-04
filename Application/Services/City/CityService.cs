@@ -111,7 +111,7 @@ namespace Application.Services
                 }
                 return city;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return city;
             }
@@ -128,9 +128,9 @@ namespace Application.Services
             return await _cityRepository.Update(t);
         }
 
-        private async Task Add(City TEntity)
+        private async Task Add(City entity)
         {
-            _mapper.Map<CityViewModelResponse>(await _cityRepository.Add(TEntity));
+            _mapper.Map<CityViewModelResponse>(await _cityRepository.Add(entity));
         }
     }
 }

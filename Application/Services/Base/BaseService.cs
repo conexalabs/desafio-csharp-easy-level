@@ -16,20 +16,5 @@ namespace Application.Services.Base
             _baseRepository = baseRepository;
             _mapper = mapper;
         }
-
-        public TViewModelResponse GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<TEntity> Update(TEntity t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public TViewModelResponse Add(TEntity TEntity)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
