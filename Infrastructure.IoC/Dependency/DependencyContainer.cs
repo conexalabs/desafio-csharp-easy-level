@@ -17,7 +17,7 @@ namespace Infrastructure.IoC.Dependency
 
             serviceCollection.AddHttpClient();
             serviceCollection.AddDbContext<ConexaContext>(opt => opt.UseSqlServer(
-                @"Server=tcp:localhost,1433;Database=ConexaDB;User Id=sa;Password=Sample123$; Integrated Security=True"));
+                @"Server=localhost,1433;Database=ConexaDB;User Id=SA;Password=0rUOw5M5ad; Integrated Security=True"));
     
             //Service
             serviceCollection.AddScoped<ICityService, CityService>();

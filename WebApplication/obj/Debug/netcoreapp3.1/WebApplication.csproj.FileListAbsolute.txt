@@ -69,3 +69,14 @@ C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\A
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\dist\web.config
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\web.config
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\appsettings.Development.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\appsettings.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\dist\appsettings.Development.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\dist\appsettings.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\dist\WebApplication.deps.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\dist\WebApplication.runtimeconfig.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\WebApplication.deps.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\dist\WebApplication.runtimeconfig.json
+C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\bin\Debug\netcoreapp3.1\Docker.DotNet.dll

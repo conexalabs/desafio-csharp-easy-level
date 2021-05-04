@@ -15,48 +15,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Adiciona função para verificar se foi possível coletar os dados da API externa">
-      <change afterPath="$PROJECT_DIR$/Application/ViewModels/City/API/BadRequest/BadRequestViewModelAPI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/ViewModels/City/API/CityAPI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infra.Data/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" afterDir="false" />
+    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Finaliza Service e adiciona comandos Docker">
+      <change afterPath="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Application.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Application.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Entidades/City/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/City/City.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Entidades/City/Coord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/City/Coord.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IBaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Services/City/CityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Services/City/CityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModelRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConexaLabs.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ConexaLabs.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Infra.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Infra.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210501232959_initialCreate.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210501232959_initialCreate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210501234346_RemoveMappedForCoord.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210501234346_RemoveMappedForCoord.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210502065703_Teste.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/20210502065703_Teste.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/ConexaContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Repositories/Base/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Repositories/Base/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -65,8 +31,6 @@
       <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infra.Data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
@@ -75,42 +39,23 @@
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/TesteUnit.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/TesteUnit.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/TesteUnit.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/TesteUnit.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TesteUnit/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TesteUnit/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/CidadeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/TempController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/WebApplication.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,35 +72,36 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infra.Data/DBContext/ConexaContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/8a/353633a7/IdentityMap`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6850AC36-3902-4274-8920-A316813D4FD3/A/InMemoryDbContextOptionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60B4CAED-9553-4D9E-9BBA-8E623D3661FF/0a/ff7e0f6b/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF4263DB-1990-4D27-8A08-3F2BC9AFBE0A/e7/a865a120/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ED034A4B-CA2E-4B03-B599-958B4A376BAF/37/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infra.Data/DBContext/ConexaDesignContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TesteUnit/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18DBB77C-EAEF-4A87-809E-3E0C2811909B/3/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/687CD3EF-1206-406C-8B82-2CB02EE0595E/f5/8df11676/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/184C119B-3094-4027-A59E-14EA4D85D4F7/d1/1ce69626/Host.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ED034A4B-CA2E-4B03-B599-958B4A376BAF/5E/ConnectHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1ADF0657-1585-46E0-8D0C-702F997D04A8/b8/c2d2f043/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/3A2/EventSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infra.Data/DBContext/ConexaDesignContextFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9D8DFFFD-C0AB-4261-8D79-37DA229B2646/1F/Socket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48F23A5D-0965-44C1-BCA7-4ED3E1516FC2/73/8bfa4009/EndpointRoutingApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18DBB77C-EAEF-4A87-809E-3E0C2811909B/69/25c48acb/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/62/ReflectionHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52A6E9AA-74AC-4C70-9FA9-63A6CCE87EDF/32/faccebd4/SingleQueryingEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D0DCE0B-B567-4456-8451-1EAB6CCCDB13/ab/0e4999ca/HttpWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24840A40-1977-4459-B008-6F64B5C94A1F/6b/4fb8500e/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A33DF5F-92B3-4BA7-A019-8B2B11FCBF21/27/DatabaseGeneratedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/breno/RiderProjects/ConexaLabs/Infra.Data/DBContext/ConexaContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/321/Stream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AE604AFE-B657-4617-A94D-F2A743C6288E/F/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/40/62e34b4d/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -168,10 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Class1.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.IoC/Class1.cs" />
-        <option value="$PROJECT_DIR$/Web.Mvc/appsettings.json" />
-        <option value="$PROJECT_DIR$/Domain/Entity/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/Base/EntityBase.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/City.cs" />
@@ -195,17 +137,14 @@
         <option value="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModelRequest.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" />
         <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IBaseRepository.cs" />
         <option value="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
         <option value="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" />
         <option value="$PROJECT_DIR$/Application/Entidades/City/Coord.cs" />
         <option value="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" />
         <option value="$PROJECT_DIR$/Application/Entidades/City/City.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/API/BadRequest/BadRequestViewModelAPI.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/CidadeController.cs" />
         <option value="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" />
@@ -216,9 +155,16 @@
         <option value="$PROJECT_DIR$/Application/ViewModels/City/API/CityAPI.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" />
         <option value="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Dockerfile" />
-        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
         <option value="$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" />
+        <option value="$PROJECT_DIR$/xUnitTest/Class1.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
+        <option value="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Dockerfile" />
       </list>
     </option>
   </component>
@@ -353,6 +299,7 @@
       <workItem from="1619905405896" duration="17249000" />
       <workItem from="1619968994210" duration="30871000" />
       <workItem from="1620066941247" duration="25123000" />
+      <workItem from="1620128003996" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="Criando projeto inicial da Conexa">
       <created>1619913008581</created>
@@ -433,90 +380,90 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620087848923" />
-    <state width="2517" height="515" key="GridCell.Tab.0.bottom" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.0.bottom" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.0.center" timestamp="1620097933976">
+    <state width="2517" height="515" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.0.center" timestamp="1620128630727">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933976" />
-    <state width="2517" height="515" key="GridCell.Tab.0.left" timestamp="1620097933976">
+    <state width="2517" height="515" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630727" />
+    <state width="2517" height="515" key="GridCell.Tab.0.left" timestamp="1620128630727">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933976" />
-    <state width="2517" height="515" key="GridCell.Tab.0.right" timestamp="1620097933976">
+    <state width="2517" height="515" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630727" />
+    <state width="2517" height="515" key="GridCell.Tab.0.right" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933976" />
-    <state width="2517" height="515" key="GridCell.Tab.1.bottom" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.1.bottom" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.1.center" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.1.center" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.1.left" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.1.left" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.1.right" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.1.right" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.2.bottom" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.2.bottom" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.2.center" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.2.center" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.2.left" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.2.left" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.2.right" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.2.right" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.3.bottom" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.3.bottom" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.3.center" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.3.center" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.3.left" timestamp="1620097933977">
+    <state width="2517" height="515" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.3.left" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933977" />
-    <state width="2517" height="515" key="GridCell.Tab.3.right" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.3.right" timestamp="1620128630728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.4.bottom" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630728" />
+    <state width="2517" height="515" key="GridCell.Tab.4.bottom" timestamp="1620128630729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.4.center" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
+    <state width="2517" height="515" key="GridCell.Tab.4.center" timestamp="1620128630729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.4.left" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
+    <state width="2517" height="515" key="GridCell.Tab.4.left" timestamp="1620128630729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state width="2517" height="515" key="GridCell.Tab.4.right" timestamp="1620097933978">
+    <state width="2517" height="515" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
+    <state width="2517" height="515" key="GridCell.Tab.4.right" timestamp="1620128630729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="515" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620097933978" />
-    <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size" timestamp="1619916803812">
+    <state width="2517" height="515" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620128630729" />
+    <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size" timestamp="1620110379409">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400@0.0.2560.1400" timestamp="1619916803812" />
+    <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400@0.0.2560.1400" timestamp="1620110379409" />
     <state x="1114" y="400" key="RiderGenerateDialog" timestamp="1620097142877">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -613,19 +560,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\APIExterna\APIExternalWeatherMaps.cs" initialLine="27">
-            <startOffsets>
-              <option value="1016" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1215" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

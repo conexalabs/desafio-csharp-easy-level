@@ -71,8 +71,14 @@ namespace WebApplication
             context.Citys.Add(testeCity);
             context.SaveChanges();
         }
-        private static void RegisterServices(IServiceCollection services)
+        public void RegisterServices(IServiceCollection services)
         {
+            var server = Configuration["DBServer"] ?? "localhost";
+            var port = Configuration["DBPort"] ?? "1433";
+            var user = Configuration["DBUser"] ?? "SA";
+            var password = Configuration["DBPassword"] ?? "0rUOw5M5ad";
+            var database = Configuration["Database"] ?? "ConexaDB";
+            services.AddDbContext<ConexaContext>(options => options.UseInMemoryDatabase("ConexaDB"));
             DependencyContainer.RegisterServices(services);
         }
     }

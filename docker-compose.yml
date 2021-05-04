@@ -1,0 +1,19 @@
+version: '3'
+services:
+  sqlserver2017:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "0rUOw5M5ad"
+      MSSQL_PID: Express
+    ports:
+    - "1433:1433"
+  desafio-csharp-easy:
+    build:
+      context: ./WebApplication
+      dockerfile: Dockerfile
+    ports:
+    - "5000:5000"
+    depends_on:
+      - sqlserver2017
+    command: [ "dotnet", "ef", "database update" ]
