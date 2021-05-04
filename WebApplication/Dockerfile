@@ -8,14 +8,14 @@ COPY *.csproj ./
 RUN cd .. dotnet restore
 
 
-RUN pwsh -Command Write-Host "Gerando imagem Docker e testando o PowerShell Core"
-
  # copies the rest of your code
 COPY . ./
-RUN  dotnet publish -c Release -o dist   
+RUN  cd .. dotnet publish -c Release -o dist   
 
  # Stage 2
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
+
 COPY --from=build-env /app/dist .
+
 ENTRYPOINT ["dotnet", "WebApplication.dll"]

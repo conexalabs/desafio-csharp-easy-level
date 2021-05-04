@@ -1,10 +1,8 @@
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Application.Entidades.Base;
 using Application.Interfaces.Repository.Base;
 using Infra.Data.DBContext;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Data.Repositories.Base
 {

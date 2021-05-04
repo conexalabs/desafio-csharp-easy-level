@@ -15,11 +15,67 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Adiciona e remove arquivos desnecessários">
+    <list default="true" id="a4eb54bf-d171-4ba9-b087-2cec7f9b3c85" name="Default Changelist" comment="Remove classes e funções não usadas">
+      <change afterPath="$PROJECT_DIR$/Application/Enum/MessagerAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConexaLabs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Entidades/City/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Entidades/City/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Services/City/CityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Services/City/CityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/ViewModels/City/API/CityAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/ViewModels/City/API/CityAPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/ViewModels/City/API/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/ViewModels/City/API/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModelRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModelRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/Migrations/ConexaContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Migrations/ConexaContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/Repositories/Base/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Repositories/Base/BaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infra.Data/obj/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.IoC/obj/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/TempController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/TempController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infra.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/bin/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/obj/Debug/netcoreapp3.1/WebApplication.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,8 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Domain/Entidades/City.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entidades/City/City.cs" />
         <option value="$PROJECT_DIR$/Domain/Entidades/City/Coord.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/CityService.cs" />
         <option value="$PROJECT_DIR$/Domain/Interfaces/City/ICityRepository.cs" />
@@ -143,37 +197,39 @@
         <option value="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponseAPI.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModel.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/Request/CityViewModelRequest.cs" />
-        <option value="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" />
         <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaContext.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Repository/Base/IBaseRepository.cs" />
-        <option value="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" />
         <option value="$PROJECT_DIR$/Application/Entidades/City/Coord.cs" />
         <option value="$PROJECT_DIR$/Application/Entidades/Base/EntityBase.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Service/ICityService.cs" />
-        <option value="$PROJECT_DIR$/Application/Entidades/City/City.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/API/BadRequest/BadRequestViewModelAPI.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/CidadeController.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" />
-        <option value="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/TempController.cs" />
         <option value="$PROJECT_DIR$/Infra.Data/Repositories/Base/BaseRepository.cs" />
         <option value="$PROJECT_DIR$/Application/ViewModels/City/API/CityAPI.cs" />
-        <option value="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" />
         <option value="$PROJECT_DIR$/TesteUnit/Application/Services/CityServiceTest.cs" />
         <option value="$PROJECT_DIR$/xUnitTest/Class1.cs" />
         <option value="$PROJECT_DIR$/WebApplication/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/WebApplication/Dockerfile" />
-        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
-        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
-        <option value="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" />
-        <option value="$PROJECT_DIR$/Application/Services/City/CityService.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/Service/Base/IBaseService.cs" />
         <option value="$PROJECT_DIR$/Application/Services/Base/BaseService.cs" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Application/Enum/MessagerAPI.cs" />
+        <option value="$PROJECT_DIR$/Application/Interfaces/Repository/ICityRepository.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs" />
+        <option value="$PROJECT_DIR$/Application/Entidades/City/City.cs" />
+        <option value="$PROJECT_DIR$/Application/Interfaces/ExternaWeatherMaps/IAPIExternalWeatherMaps.cs" />
+        <option value="$PROJECT_DIR$/Application/Services/City/CityService.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/APIExterna/APIExternalWeatherMaps.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.IoC/Dependency/DependencyContainer.cs" />
+        <option value="$PROJECT_DIR$/Application/ViewModels/City/Response/CityViewModelResponse.cs" />
+        <option value="$PROJECT_DIR$/Application/AutoMapper/City/CityProfile.cs" />
+        <option value="$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs" />
+        <option value="$PROJECT_DIR$/Infra.Data/DBContext/ConexaDesignContextFactory.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Dockerfile" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
       </list>
     </option>
   </component>
@@ -189,6 +245,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.35829493" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -414,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620153589603</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Remove classes e funções não usadas">
+      <created>1620153891699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620153891699</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,13 +517,14 @@
     <MESSAGE value="Adiciona Swagger" />
     <MESSAGE value="Adiciona os testes unitários" />
     <MESSAGE value="Adiciona e remove arquivos desnecessários" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adiciona e remove arquivos desnecessários" />
+    <MESSAGE value="Remove classes e funções não usadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove classes e funções não usadas" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1776" y="581" key="#Port_bindings" timestamp="1620142905423">
+    <state x="1776" y="581" key="#Port_bindings" timestamp="1620154141604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1776" y="581" key="#Port_bindings/0.0.2560.1400@0.0.2560.1400" timestamp="1620142905423" />
+    <state x="1776" y="581" key="#Port_bindings/0.0.2560.1400@0.0.2560.1400" timestamp="1620154141604" />
     <state x="1374" y="358" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620136192990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -476,86 +541,90 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1758" y="583" key="DockerComposeFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620136137137" />
-    <state width="2517" height="483" key="GridCell.Tab.0.bottom" timestamp="1620153475236">
+    <state x="1153" y="598" key="Github.ShareDialog" timestamp="1620160538736">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475236" />
-    <state width="2517" height="483" key="GridCell.Tab.0.center" timestamp="1620153475236">
+    <state x="1153" y="598" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620160538736" />
+    <state width="2517" height="483" key="GridCell.Tab.0.bottom" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475236" />
-    <state width="2517" height="483" key="GridCell.Tab.0.left" timestamp="1620153475236">
+    <state width="2517" height="483" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.0.center" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475236" />
-    <state width="2517" height="483" key="GridCell.Tab.0.right" timestamp="1620153475236">
+    <state width="2517" height="483" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.0.left" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475236" />
-    <state width="2517" height="483" key="GridCell.Tab.1.bottom" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.0.right" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.1.center" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.1.bottom" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.1.left" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.1.center" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.1.right" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.1.left" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.2.bottom" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.1.right" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.2.center" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.2.bottom" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.2.left" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.2.center" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.2.right" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.2.left" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.3.bottom" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.2.right" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.3.center" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.3.bottom" timestamp="1620160340660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.3.left" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340660" />
+    <state width="2517" height="483" key="GridCell.Tab.3.center" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.3.right" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.3.left" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.4.bottom" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.3.right" timestamp="1620160340659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.4.center" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340659" />
+    <state width="2517" height="483" key="GridCell.Tab.4.bottom" timestamp="1620160340660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.4.left" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340660" />
+    <state width="2517" height="483" key="GridCell.Tab.4.center" timestamp="1620160340660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
-    <state width="2517" height="483" key="GridCell.Tab.4.right" timestamp="1620153475237">
+    <state width="2517" height="483" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340660" />
+    <state width="2517" height="483" key="GridCell.Tab.4.left" timestamp="1620160340660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="483" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620153475237" />
+    <state width="2517" height="483" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340660" />
+    <state width="2517" height="483" key="GridCell.Tab.4.right" timestamp="1620160340660">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="483" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1620160340660" />
     <state x="871" y="655" key="Rider.ProjectTemplateDialog.Size" timestamp="1620110379409">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -572,6 +641,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1620088457596" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1620153880534">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1620153880534" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1620095730658">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -602,94 +675,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WebApplication/Controllers/TempController.cs</url>
-          <line>40</line>
+          <line>36</line>
           <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\WebApplication\Controllers\TempController.cs" initialLine="40">
             <startOffsets>
-              <option value="1062" />
+              <option value="916" />
             </startOffsets>
             <endOffsets>
-              <option value="1114" />
+              <option value="968" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs</url>
-          <line>39</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\Repositories\City\CityRepository.cs" initialLine="32">
-            <startOffsets>
-              <option value="1257" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1365" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Application/Services/City/CityService.cs</url>
-          <line>100</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Application\Services\City\CityService.cs" initialLine="102">
-            <startOffsets>
-              <option value="3909" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3969" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infra.Data/Repositories/City/CityRepository.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Infra.Data\Repositories\City\CityRepository.cs" initialLine="33">
-            <startOffsets>
-              <option value="1046" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1143" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Application/Services/City/CityService.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Application\Services\City\CityService.cs" initialLine="29">
-            <startOffsets>
-              <option value="983" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1040" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Application/Services/City/CityService.cs</url>
-          <line>36</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\Application\Services\City\CityService.cs" initialLine="36">
-            <startOffsets>
-              <option value="1309" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1363" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/xUnitTest/Services/City/CityServiceTest.cs</url>
-          <line>94</line>
-          <properties documentPath="C:\Users\breno\RiderProjects\ConexaLabs\xUnitTest\Services\City\CityServiceTest.cs" initialLine="94">
-            <startOffsets>
-              <option value="3487" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3655" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

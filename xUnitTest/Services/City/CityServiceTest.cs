@@ -1,14 +1,13 @@
 using System;
 using System.Net.Http;
 using Application.Entidades.City;
+using Application.Interfaces.ExternaWeatherMaps;
 using Application.Interfaces.Repository;
 using Application.Services;
 using Application.ViewModels.City.Response;
 using AutoMapper;
-using Infra.Data.APIExterna;
 using Moq;
 using Xunit;
-using Xunit.Sdk;
 
 namespace xUnitTest.Services.City
 {
@@ -41,12 +40,12 @@ namespace xUnitTest.Services.City
                 Mensagem= "Valor buscado pelo API"
             };
             var cidade = "Sorriso";
-            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade, null))
+            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade))
                 .ReturnsAsync(objCityViewModel);
             _mapperMock.Setup(x => x.Map<Application.Entidades.City.City>(objCityViewModel))
                 .Returns(new Application.Entidades.City.City
             {
-                Name = "Sorriso",
+                CityName = "Sorriso",
                 Temp = "26.67",
                 coord = new Coord()
                 {
@@ -56,7 +55,7 @@ namespace xUnitTest.Services.City
             });
             _cityRepositoryMock.Setup(x => x.Add(new Application.Entidades.City.City()
             {
-                Name = "Sorriso",
+                CityName = "Sorriso",
                 Temp = "26.67",
                 coord = new Coord()
                 {
@@ -66,7 +65,7 @@ namespace xUnitTest.Services.City
             }));
             _cityRepositoryMock.Setup(x => x.GetByCidade("Sorriso")).Returns(new Application.Entidades.City.City()
             {
-                Name = "Sorriso",
+                CityName = "Sorriso",
                 Temp = "26.67",
                 coord = new Coord()
                 {
@@ -76,7 +75,7 @@ namespace xUnitTest.Services.City
             });
             
             _cityRepositoryMock.Verify(x => x.GetByCidade(cidade), Times.AtMostOnce);
-            _apiExternalWeatherMapsMock.Verify(x => x.GetTempByCity(cidade, null), Times.AtMostOnce);
+            _apiExternalWeatherMapsMock.Verify(x => x.GetTempByCity(cidade), Times.AtMostOnce);
             var result = _cityService.GetTempCidade(cidade);
 
             Assert.True(result.Result.Nome=="Sorriso");
@@ -86,24 +85,23 @@ namespace xUnitTest.Services.City
         public void GetCidadeValida_APIInvalida()
         {
             var cidade = "Sorriso";
-            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade, null))
+            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade))
                 .Throws(new HttpRequestException("Mensagem"));
             _cityRepositoryMock.Setup(x => x.GetByCidade("Sorriso")).Returns(() => null);
             var result = _cityService.GetTempCidade(cidade);
             
             _cityRepositoryMock.Verify(x=>x.GetByCidade(cidade),Times.Once);
-            Assert.Equal(result.Exception.InnerExceptions[0].Message, "Não foi possível acessar a API externa e encontrar esses dados no banco local. Por favor, tente mais tarte");
+            Assert.Equal("Não foi possível acessar a API externa e encontrar esses dados no banco local. Por favor, tente mais tarte", result.Exception?.InnerExceptions[0].Message);
         }
-
         [Fact]
         public void GetCidadeValida_APIInvalidaComDados()
         {
             var cidade = "Sorriso";
-            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade, null))
+            _apiExternalWeatherMapsMock.Setup(x => x.GetTempByCity(cidade))
                 .Throws(new HttpRequestException("Mensagem"));
             var cityEntity = new Application.Entidades.City.City()
             {
-                Name = "Sorriso",
+                CityName = "Sorriso",
                 Temp = "26.67",
                 coord = new Coord()
                 {

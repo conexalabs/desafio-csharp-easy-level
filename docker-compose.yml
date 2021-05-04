@@ -8,12 +8,11 @@ services:
     ports:
     - "1433:1433"
   desafio-csharp-easy-test:
-    ports:
-      - "5000:5000"
-    image: desafioteste
+    image: desafioteste:latest
+    depends_on:
+      - sqlserver2017
     build:
       context: ./WebApplication
       dockerfile: Dockerfile
-    depends_on:
-      - sqlserver2017
-    command: [ "dotnet", "ef", "database update" ]
+    ports:
+      - "5000:80"

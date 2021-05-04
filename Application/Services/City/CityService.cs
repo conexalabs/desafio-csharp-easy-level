@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Application.Entidades.City;
+using Application.Enum;
+using Application.Interfaces.ExternaWeatherMaps;
 using Application.Interfaces.Repository;
 using Application.Interfaces.Service;
-using Application.ViewModels;
-using Application.ViewModels.City;
 using Application.ViewModels.City.Response;
 using AutoMapper;
-using Infra.Data.APIExterna;
 
 namespace Application.Services
 {
@@ -27,43 +26,38 @@ namespace Application.Services
 
         public async Task<CityViewModelResponse> GetTempCidade(string cidade)
         {
-            CityViewModelResponse city = new CityViewModelResponse();
-            //Pegar da API , se não conseguir, tentar pegar pelo banco de dados;
+            var cityResponse = new CityViewModelResponse();
             try
             {
-                city = await _apiExternalWeatherMaps.GetTempByCity(cidade, null);
-            }catch (HttpRequestException ex)
+                cityResponse = await _apiExternalWeatherMaps.GetTempByCity(cidade);
+            }catch (HttpRequestException)
             {
-                var cidadeBanco = _cityRepository.GetByCidade(cidade);
-                if (cidadeBanco == null)
-                    throw new Exception(
-                        "Não foi possível acessar a API externa e encontrar esses dados no banco local. Por favor, tente mais tarte");
-                //mapping
-                city = _mapper.Map<CityViewModelResponse>(cidadeBanco);
-                city.Mensagem = "API indisponível no momento, ultimo dado consultado foi de " +
-                                cidadeBanco.UltimaAtualizacao + ".";
-                return city;
-
+                var cityEntity = _cityRepository.GetByCidade(cidade);
+                if (cityEntity == null)
+                    throw new Exception(MessagerAPI.APIandBDNotDate.ToString());
+                cityResponse = _mapper.Map<CityViewModelResponse>(cityEntity);
+                cityResponse.Mensagem = "API indisponível no momento, ultimo dado consultado foi de " +
+                                        cityEntity.UltimaAtualizacao + ".";
+                return cityResponse;
             }
-            //Adicionar no banco de dados o valor consultado.
             try
             {
-                var obj = _mapper.Map<City>(city);
-                if(_cityRepository.GetByCidade(obj.Name)==null)
+                var obj = _mapper.Map<City>(cityResponse);
+                if(_cityRepository.GetByCidade(obj.CityName)==null)
                     await Add(obj);
                 else
                 {
-                    var objupdate = _cityRepository.GetByCidade(obj.Name);
+                    var objupdate = _cityRepository.GetByCidade(obj.CityName);
                     objupdate.Temp = obj.Temp;
                     objupdate.coord = obj.coord;
                     objupdate.UltimaAtualizacao=DateTime.Now;
                     await Update(objupdate);
                 }
-                return city;
+                return cityResponse;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return city;
+                return cityResponse;
             }
             
         }
@@ -71,7 +65,6 @@ namespace Application.Services
         public async Task<CityViewModelResponse> GetTempCoord(string lat, string lon)
         {
             CityViewModelResponse city;
-            //Pegar da API , se não conseguir, tentar pegar pelo banco de dados;
             try
             {
                 city = await _apiExternalWeatherMaps.GetTempByLonLat(lat, lon);
@@ -94,7 +87,6 @@ namespace Application.Services
                 throw new Exception(
                     ex.Message);
             }
-            //Adicionar no banco de dados o valor consultado.
             try
             {
                 var obj = _mapper.Map<City>(city);
@@ -106,7 +98,7 @@ namespace Application.Services
                     objupdate.Temp = obj.Temp;
                     objupdate.coord = obj.coord;
                     objupdate.UltimaAtualizacao=DateTime.Now;
-                    objupdate.Name = obj.Name;
+                    objupdate.CityName = obj.CityName;
                     await Update(objupdate);
                 }
                 return city;
@@ -122,10 +114,10 @@ namespace Application.Services
         {
             return _mapper.Map<IList<CityViewModelResponse>>(_cityRepository.GetAll());
         }
-        
-        public async Task<City> Update(City t)
+
+        private async Task Update(City t)
         {
-            return await _cityRepository.Update(t);
+            await _cityRepository.Update(t);
         }
 
         private async Task Add(City entity)

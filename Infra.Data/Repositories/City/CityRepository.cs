@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Application.Entidades.City;
 using Application.Interfaces.Repository;
 using Infra.Data.DBContext;
@@ -25,9 +24,14 @@ namespace Infra.Data.Repositories
 
         public City GetByCidade(string cidade)
         {
-            return _conexaContext.Citys.Include(x=>x.coord).AsTracking().FirstOrDefault(x => x.IsDeleted == false && x.Name == cidade);
+            return _conexaContext.Citys.Include(x=>x.coord).AsTracking().FirstOrDefault(x => x.IsDeleted == false && x.CityName == cidade);
         }
-        
+
+        public bool AnyByCidade(string cidade)
+        {
+            return _conexaContext.Citys.Any(x => x.CityName == cidade);
+        }
+
 
         public bool AnyLonLat(string lat, string lon)
         {

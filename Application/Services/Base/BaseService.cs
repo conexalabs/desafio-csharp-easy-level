@@ -1,7 +1,4 @@
-using System;
-using System.Threading.Tasks;
 using Application.Entidades.Base;
-using Application.Interfaces.Repository.Base;
 using Application.Interfaces.Service.Base;
 using AutoMapper;
 

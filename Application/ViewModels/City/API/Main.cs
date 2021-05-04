@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace Application.ViewModels.City
 {
     public class main

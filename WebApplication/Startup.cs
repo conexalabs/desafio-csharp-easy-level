@@ -1,20 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using Application.Entidades.City;
 using Infra.Data.DBContext;
 using Infrastructure.IoC.Dependency;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace WebApplication
 {
@@ -62,7 +55,6 @@ namespace WebApplication
                 var context = serviceScope.ServiceProvider.GetService<ConexaContext>();
                 
                 context.Database.Migrate();
-                Console.WriteLine(context.Database.GetConnectionString()+" O banco aqui #################################");
                 AdicionarDadosTeste(context);
             }
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
@@ -74,7 +66,7 @@ namespace WebApplication
         {
             var testeCity = new City()
             {
-                Name = "Sorriso",
+                CityName = "Sorriso",
                 Temp = "9.9",
                 UltimaAtualizacao = DateTime.Now
             };
