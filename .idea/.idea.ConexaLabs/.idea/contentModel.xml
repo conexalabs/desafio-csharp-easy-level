@@ -57,11 +57,15 @@
         <e p="ViewModels" t="Include">
           <e p="City" t="Include">
             <e p="API" t="Include">
+              <e p="BadRequest" t="Include">
+                <e p="BadRequestViewModelAPI.cs" t="Include" />
+              </e>
+              <e p="CityAPI.cs" t="Include" />
               <e p="Coord.cs" t="Include" />
               <e p="main.cs" t="Include" />
             </e>
             <e p="Request" t="Include">
-              <e p="CityViewModel.cs" t="Include" />
+              <e p="CityViewModelRequest.cs" t="Include" />
             </e>
             <e p="Response" t="Include">
               <e p="CityViewModelResponse.cs" t="Include" />
@@ -80,15 +84,12 @@
           <e p="ConexaContext.cs" t="Include" />
           <e p="ConexaDesignContextFactory.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="Infra.Data.csproj" t="IncludeRecursive" />
         <e p="Infra.Data.csproj.DotSettings" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20210501232959_initialCreate.cs" t="Include" />
-          <e p="20210501232959_initialCreate.Designer.cs" t="Include" />
-          <e p="20210501234346_RemoveMappedForCoord.cs" t="Include" />
-          <e p="20210501234346_RemoveMappedForCoord.Designer.cs" t="Include" />
-          <e p="20210502065703_Teste.cs" t="Include" />
-          <e p="20210502065703_Teste.Designer.cs" t="Include" />
+          <e p="20210504004829_addDB.cs" t="Include" />
+          <e p="20210504004829_addDB.Designer.cs" t="Include" />
           <e p="ConexaContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -123,8 +124,12 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="TesteUnit" t="IncludeRecursive">
+        <e p="Application" t="Include">
+          <e p="Services" t="Include">
+            <e p="CityServiceTest.cs" t="Include" />
+          </e>
+        </e>
         <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -133,11 +138,9 @@
             </e>
           </e>
         </e>
-        <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="Startup.cs" t="Include" />
         <e p="TesteUnit.csproj" t="IncludeRecursive" />
       </e>
       <e p="WebApplication" t="IncludeRecursive">
@@ -145,7 +148,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="CidadeController.cs" t="Include" />
+          <e p="TempController.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="obj" t="ExcludeRecursive">

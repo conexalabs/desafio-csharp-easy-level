@@ -16,7 +16,8 @@ namespace Infrastructure.IoC.Dependency
         {
 
             serviceCollection.AddHttpClient();
-            serviceCollection.AddDbContext<ConexaContext>(opt => opt.UseInMemoryDatabase("ConexaDB"));
+            serviceCollection.AddDbContext<ConexaContext>(opt => opt.UseSqlServer(
+                @"Server=tcp:localhost,1433;Database=ConexaDB;User Id=sa;Password=Sample123$; Integrated Security=True"));
     
             //Service
             serviceCollection.AddScoped<ICityService, CityService>();
@@ -28,7 +29,6 @@ namespace Infrastructure.IoC.Dependency
             //Adiciona os AutoMapper
             serviceCollection.AddAutoMapper(Assembly.Load("Application"));
             
-
         }
     }
 }

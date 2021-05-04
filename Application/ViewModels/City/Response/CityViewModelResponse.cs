@@ -6,6 +6,6 @@ namespace Application.ViewModels.City.Response
         public string Temp { get; set; }
         public string lon { get; set; }
         public string lat { get; set; }
-        public string Mensagem { get; set; }
+        public string Mensagem { get; set; } = "Valor buscado pelo API";
     }
 }

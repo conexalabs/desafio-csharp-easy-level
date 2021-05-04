@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj": {
+            "projectPath": "C:\\Users\\breno\\RiderProjects\\ConexaLabs\\Application\\Application.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,6 +30,16 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Moq": {
+          "target": "Package",
+          "version": "[4.16.1, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

@@ -64,8 +64,9 @@ namespace WebApplication
         {
             var testeCity = new City()
             {
-                Id = 1010,
-                Name = "CidadeTeste"
+                Name = "Sorriso",
+                Temp = "9.9",
+                UltimaAtualizacao = DateTime.Now
             };
             context.Citys.Add(testeCity);
             context.SaveChanges();

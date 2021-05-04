@@ -8,6 +8,7 @@ namespace Application.Interfaces.Repository
     {
         IList<City> GetAll();
         City GetByCidade(string cidade);
-        City GetByLonLat(string lon, string lat);
+        City GetByLonLat(string lat, string lon);
+        bool AnyLonLat(string lat, string lon);
     }
 }

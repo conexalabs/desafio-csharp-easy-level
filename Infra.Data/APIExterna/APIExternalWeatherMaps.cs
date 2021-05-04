@@ -1,67 +1,111 @@
 using System;
-using System.Collections.Generic;
-using System.Net;
+using System.ComponentModel;
+using System.IO;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Application.Entidades.City;
+using Application.ViewModels;
 using Application.ViewModels.City;
-using Newtonsoft.Json.Linq;
+using Application.ViewModels.City.BadRequest;
+using Application.ViewModels.City.Response;
+using AutoMapper;
+using Newtonsoft.Json;
+using Coord = Application.Entidades.City.Coord;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Infra.Data.APIExterna
 {
     public class ApiExternalWeatherMaps : IApiExternalWeatherMaps
     {
-        
+        private readonly IMapper _mapper;
         private readonly IHttpClientFactory _clientFactory;
 
-        public ApiExternalWeatherMaps(IHttpClientFactory clientFactory)
+        public ApiExternalWeatherMaps(IHttpClientFactory clientFactory, IMapper mapper)
         {
             _clientFactory = clientFactory;
+            _mapper = mapper;
         }
 
-        public async Task<CityViewModel> GetTempByCity(string Cidade, string metric)
+        public async Task<CityViewModelResponse> GetTempByCity(string Cidade, string metric)
         {
-            CityViewModel teste = new CityViewModel();
+            CityViewModelResponse teste = new CityViewModelResponse();
             var request = new HttpRequestMessage(HttpMethod.Get,
-                "http://www.api.openweathermap.org/data/2.5/weather?q="+Cidade+"&Units="+metric+"&lang=pt_br&appid=142d374d2ea6105f400f36546592a3d4");
+                "http://api.openweathermap.org/data/2.5/weather?q="+Cidade+"&units="+metric+"&lang=pt_br&appid=142d374d2ea6105f400f36546592a3d4");
             var client = _clientFactory.CreateClient();
 
             var response = await client.SendAsync(request);
+            Stream responseStream;
+            JsonSerializerOptions options;
+            if (!response.IsSuccessStatusCode)
+            {
+                responseStream = await response.Content.ReadAsStreamAsync();
+                options = new JsonSerializerOptions
+                {
+                    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true,
+                };
 
-            if (!response.IsSuccessStatusCode) return teste;
-            await using var responseStream = await response.Content.ReadAsStreamAsync();
-            var options = new JsonSerializerOptions
+                var objBadRequest = await JsonSerializer.DeserializeAsync
+                    <BadRequestViewModelAPI>(responseStream, options);
+                throw new Exception(objBadRequest.message);
+                
+            }
+            responseStream = await response.Content.ReadAsStreamAsync();
+            options = new JsonSerializerOptions
             {
                 DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
-            teste = await JsonSerializer.DeserializeAsync
-                <CityViewModel>(responseStream, options);
+            var objAPI = await JsonSerializer.DeserializeAsync
+                <CityAPI>(responseStream, options);
+            teste = _mapper.Map<CityViewModelResponse>(objAPI);
             return teste;
         }
 
-        public async Task<CityViewModel> GetTempByLonLat(string lon, string lat)
+        public async Task<CityViewModelResponse> GetTempByLonLat(string lat, string lon)
         {
-            CityViewModel teste = new CityViewModel();
+            CityViewModelResponse teste = new CityViewModelResponse();
             var request = new HttpRequestMessage(HttpMethod.Get,
                 "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&appid=142d374d2ea6105f400f36546592a3d4");
             var client = _clientFactory.CreateClient();
 
             var response = await client.SendAsync(request);
 
-            if (!response.IsSuccessStatusCode) return teste;
-            await using var responseStream = await response.Content.ReadAsStreamAsync();
-            var options = new JsonSerializerOptions
+            Stream responseStream;
+            JsonSerializerOptions options;
+            if (!response.IsSuccessStatusCode)
+            {
+                responseStream = await response.Content.ReadAsStreamAsync();
+                options = new JsonSerializerOptions
+                {
+                    DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true
+                };
+                var objBadRequest = await JsonSerializer.DeserializeAsync
+                    <BadRequestViewModelAPI>(responseStream, options);
+                throw new Exception(objBadRequest.message);
+                
+            }
+            responseStream = await response.Content.ReadAsStreamAsync();
+            options = new JsonSerializerOptions
             {
                 DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
-            teste = await JsonSerializer.DeserializeAsync
-                <CityViewModel>(responseStream, options);
+            var objApi = await JsonSerializer.DeserializeAsync
+                <CityAPI>(responseStream, options);
+            teste = _mapper.Map<CityViewModelResponse>(objApi);
             return teste;
         }
 
-       
+        public Task<CityViewModelResponse> GetTempMouthByCity(string Cidade, string KeyAPI)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<CityViewModelResponse> GetTempMouthByLonLat(string Cidade, string KeyAPI)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

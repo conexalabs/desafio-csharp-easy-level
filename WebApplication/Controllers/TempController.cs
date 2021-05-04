@@ -11,22 +11,34 @@ namespace WebApplication.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CidadeController : ControllerBase
+    public class TempController : ControllerBase
     {
 
         private readonly ICityService _cityService;
 
-        public CidadeController(ICityService cityService)
+        public TempController(ICityService cityService)
         {
             _cityService = cityService;
         }
 
-        [HttpGet]
+        [HttpGet("Cidade")]
         public async Task<IActionResult> Get(string cidade)
         {
             try
             {
                 return Ok(await _cityService.GetTempCidade(cidade));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet("lonlat")]
+        public async Task<IActionResult> Getlonlat(string lat, string lon)
+        {
+            try
+            {
+                return Ok(await _cityService.GetTempCoord(lat,lon));
             }
             catch (Exception ex)
             {

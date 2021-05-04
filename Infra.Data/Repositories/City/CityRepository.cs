@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Application.Entidades.City;
 using Application.Interfaces.Repository;
 using Infra.Data.DBContext;
 using Infra.Data.Repositories.Base;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Data.Repositories
 {
@@ -18,17 +20,27 @@ namespace Infra.Data.Repositories
 
         public IList<City> GetAll()
         {
-            return _conexaContext.Set<City>().Where(x=>x.IsDeleted==false).ToList();
+            return _conexaContext.Set<City>().Include(x=>x.coord).Where(x=>x.IsDeleted==false).ToList();
         }
 
         public City GetByCidade(string cidade)
         {
-            return _conexaContext.Citys.FirstOrDefault(x => x.IsDeleted == false && x.Name == cidade);
+            return _conexaContext.Citys.Include(x=>x.coord).AsTracking().FirstOrDefault(x => x.IsDeleted == false && x.Name == cidade);
+        }
+        
+
+        public bool AnyLonLat(string lat, string lon)
+        {
+            var obj= _conexaContext.Citys.Include(x=>x.coord).Any(x => x.coord.lat==lat && x.coord.lon==lon);
+            return obj;
         }
 
-        public City GetByLonLat(string lon, string lat)
+        public City GetByLonLat(string lat, string lon)
         {
-            return _conexaContext.Citys.FirstOrDefault(x => x.IsDeleted == false && x.coord.lat==lat && x.coord.lon==lon);
+            var obj= _conexaContext.Citys.Include(x=>x.coord).FirstOrDefault(x => x.coord.lat==lat && x.coord.lon==lon);
+            return obj;
         }
-        }
+
+        
+    }
     }
