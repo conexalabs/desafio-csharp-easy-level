@@ -1,7 +1,4 @@
 version: '3'
-networks:
-  webapi:
-    driver: bridge
 services:
   sqlserver2017:
     image: mcr.microsoft.com/mssql/server
@@ -10,8 +7,6 @@ services:
       SA_PASSWORD: "0rUOw5M5ad"
     ports:
     - "1433:1433"
-    networks:
-      - webapi
   desafio-csharp-easy-test:
     ports:
       - "5000:5000"
@@ -21,6 +16,4 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - sqlserver2017
-    networks:
-      - webapi
     command: [ "dotnet", "ef", "database update" ]

@@ -27,14 +27,13 @@ namespace Application.Services
 
         public async Task<CityViewModelResponse> GetTempCidade(string cidade)
         {
-            CityViewModelResponse city;
+            CityViewModelResponse city = new CityViewModelResponse();
             //Pegar da API , se não conseguir, tentar pegar pelo banco de dados;
             try
             {
-                city = await _apiExternalWeatherMaps.GetTempByCity(cidade, "Metric");
+                city = await _apiExternalWeatherMaps.GetTempByCity(cidade, null);
             }catch (HttpRequestException ex)
             {
-                var testebanco = _cityRepository.GetAll();
                 var cidadeBanco = _cityRepository.GetByCidade(cidade);
                 if (cidadeBanco == null)
                     throw new Exception(
@@ -98,7 +97,6 @@ namespace Application.Services
             //Adicionar no banco de dados o valor consultado.
             try
             {
-                var allTeste = _cityRepository.GetAll();
                 var obj = _mapper.Map<City>(city);
                 if(!_cityRepository.AnyLonLat(obj.coord.lat, obj.coord.lon))
                     await Add(obj);
