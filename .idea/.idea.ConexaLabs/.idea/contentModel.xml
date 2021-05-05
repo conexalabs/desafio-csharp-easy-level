@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\breno\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\breno\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll" t="Include" />
+    <e p="C:\Users\breno\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\breno\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\breno\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\breno\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ConexaLabs.-910030833.00" t="ExcludeRecursive" />
+    <e p="C:\Users\breno\RiderProjects\ConexaLabs" t="IncludeFlat">
+      <e p="Application" t="IncludeRecursive">
+        <e p="Application.csproj" t="IncludeRecursive" />
+        <e p="Application.csproj.DotSettings" t="Include" />
+        <e p="AutoMapper" t="Include">
+          <e p="City" t="Include">
+            <e p="CityProfile.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entidades" t="Include">
+          <e p="Base" t="Include">
+            <e p="EntityBase.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="City.cs" t="Include" />
+            <e p="Coord.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Enum" t="Include">
+          <e p="MessagerAPI.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="ExternaWeatherMaps" t="Include">
+            <e p="IAPIExternalWeatherMaps.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="Base" t="Include">
+              <e p="IBaseRepository.cs" t="Include" />
+            </e>
+            <e p="ICityRepository.cs" t="Include" />
+          </e>
+          <e p="Service" t="Include">
+            <e p="Base" t="Include">
+              <e p="IBaseService.cs" t="Include" />
+            </e>
+            <e p="ICityService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseService.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="CityService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="City" t="Include">
+            <e p="API" t="Include">
+              <e p="BadRequest" t="Include">
+                <e p="BadRequestViewModelAPI.cs" t="Include" />
+              </e>
+              <e p="CityAPI.cs" t="Include" />
+              <e p="Coord.cs" t="Include" />
+              <e p="main.cs" t="Include" />
+            </e>
+            <e p="Request" t="Include">
+              <e p="CityViewModelRequest.cs" t="Include" />
+            </e>
+            <e p="Response" t="Include">
+              <e p="CityViewModelResponse.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ConexaLabs.sln" t="IncludeFlat" />
+      <e p="Infra.Data" t="IncludeRecursive">
+        <e p="APIExterna" t="Include">
+          <e p="APIExternalWeatherMaps.cs" t="Include" />
+          <e p="JsonExample.json" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DBContext" t="Include">
+          <e p="ConexaContext.cs" t="Include" />
+          <e p="ConexaDesignContextFactory.cs" t="Include" />
+        </e>
+        <e p="Infra.Data.csproj" t="IncludeRecursive" />
+        <e p="Infra.Data.csproj.DotSettings" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20210504153029_InitialMigration.cs" t="Include" />
+          <e p="20210504153029_InitialMigration.Designer.cs" t="Include" />
+          <e p="20210504203142_AlteraNomeColunas.cs" t="Include" />
+          <e p="20210504203142_AlteraNomeColunas.Designer.cs" t="Include" />
+          <e p="ConexaContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Infra.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseRepository.cs" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="CityRepository.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Infrastructure.IoC" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Dependency" t="Include">
+          <e p="DependencyContainer.cs" t="Include" />
+        </e>
+        <e p="Infrastructure.IoC.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Infrastructure.IoC.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="WebApplication" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TempController.cs" t="Include" />
+        </e>
+        <e p="dist" t="Include">
+          <e p="Application.dll" t="Include" />
+          <e p="Application.pdb" t="Include" />
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="AutoMapper.dll" t="Include" />
+          <e p="AutoMapper.Extensions.Microsoft.DependencyInjection.dll" t="Include" />
+          <e p="dist" t="Include">
+            <e p="appsettings.Development.json" t="Include" />
+            <e p="appsettings.json" t="Include" />
+            <e p="web.config" t="Include" />
+            <e p="WebApplication.deps.json" t="Include" />
+            <e p="WebApplication.runtimeconfig.json" t="Include" />
+          </e>
+          <e p="Docker.DotNet.dll" t="Include" />
+          <e p="Infra.Data.dll" t="Include" />
+          <e p="Infra.Data.pdb" t="Include" />
+          <e p="Infrastructure.IoC.dll" t="Include" />
+          <e p="Infrastructure.IoC.pdb" t="Include" />
+          <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.Abstractions.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.InMemory.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.Relational.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.SqlServer.dll" t="Include" />
+          <e p="Microsoft.Extensions.Caching.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.Caching.Memory.dll" t="Include" />
+          <e p="Microsoft.Extensions.Configuration.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.DependencyInjection.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.DependencyInjection.dll" t="Include" />
+          <e p="Microsoft.Extensions.Http.dll" t="Include" />
+          <e p="Microsoft.Extensions.Logging.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.Logging.dll" t="Include" />
+          <e p="Microsoft.Extensions.Options.dll" t="Include" />
+          <e p="Microsoft.Extensions.Primitives.dll" t="Include" />
+          <e p="Microsoft.Identity.Client.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.JsonWebTokens.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Logging.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Protocols.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Tokens.dll" t="Include" />
+          <e p="Newtonsoft.Json.dll" t="Include" />
+          <e p="runtimes" t="Include">
+            <e p="unix" t="Include">
+              <e p="lib" t="Include">
+                <e p="netcoreapp3.1" t="Include">
+                  <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="win" t="Include">
+              <e p="lib" t="Include">
+                <e p="netcoreapp3.1" t="Include">
+                  <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+                </e>
+                <e p="netstandard2.0" t="Include">
+                  <e p="System.Runtime.Caching.dll" t="Include" />
+                  <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="win-arm" t="Include">
+              <e p="native" t="Include">
+                <e p="Microsoft.Data.SqlClient.SNI.dll" t="Include" />
+                <e p="Microsoft.Data.SqlClient.SNI.pdb" t="Include" />
+              </e>
+            </e>
+            <e p="win-arm64" t="Include">
+              <e p="native" t="Include">
+                <e p="Microsoft.Data.SqlClient.SNI.dll" t="Include" />
+                <e p="Microsoft.Data.SqlClient.SNI.pdb" t="Include" />
+              </e>
+            </e>
+            <e p="win-x64" t="Include">
+              <e p="native" t="Include">
+                <e p="Microsoft.Data.SqlClient.SNI.dll" t="Include" />
+                <e p="Microsoft.Data.SqlClient.SNI.pdb" t="Include" />
+              </e>
+            </e>
+            <e p="win-x86" t="Include">
+              <e p="native" t="Include">
+                <e p="Microsoft.Data.SqlClient.SNI.dll" t="Include" />
+                <e p="Microsoft.Data.SqlClient.SNI.pdb" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="System.Collections.Immutable.dll" t="Include" />
+          <e p="System.ComponentModel.Annotations.dll" t="Include" />
+          <e p="System.Configuration.ConfigurationManager.dll" t="Include" />
+          <e p="System.Diagnostics.DiagnosticSource.dll" t="Include" />
+          <e p="System.IdentityModel.Tokens.Jwt.dll" t="Include" />
+          <e p="System.Runtime.Caching.dll" t="Include" />
+          <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
+          <e p="web.config" t="Include" />
+          <e p="WebApplication.deps.json" t="Include" />
+          <e p="WebApplication.dll" t="Include" />
+          <e p="WebApplication.exe" t="Include" />
+          <e p="WebApplication.pdb" t="Include" />
+          <e p="WebApplication.runtimeconfig.json" t="Include" />
+        </e>
+        <e p="Dockerfile" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="WebApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WebApplication.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="xUnitTest" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="xUnitTest.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="City" t="Include">
+            <e p="CityServiceTest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="xUnitTest.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
